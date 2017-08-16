@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="box top10">
+  <div class="goods_table"><strong>销售排行榜</strong></div> 
+  <div class="top10List clearfix">
+  <!-- {foreach name=top_goods from=$top_goods item=goods}-->
+  <!-- {if $smarty.foreach.top_goods.iteration<6}-->
+  <ul class="clearfix">
+	<img src="../images/top_{$smarty.foreach.top_goods.iteration}.gif" class="iteration" />
+	
+      <li class="topimg">
+      <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="samllimg" /></a>
+      </li>
+
+      <li>
+      <p class="h_l"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.goods_name}</a></p>
+      <p class="h_l"><font class="f1">{$goods.price}</font></p>
+      </li>
+     	
+    </ul>	
+     <!-- {/if} -->	
+  <!-- {/foreach} -->
+ </div>
+</div>
+<div class="blank5"></div>

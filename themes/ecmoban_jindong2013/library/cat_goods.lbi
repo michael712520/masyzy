@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="box ct_goods">
+    <div class="itemTit" id="itemNew">
+  <div class="ctg_title clearfix">
+    <div class="ctg_title_l">
+   {$goods_cat.name|escape:html}
+   </div>
+     <div class="ctg_title_r"> 
+    <a href="{$goods_cat.url}" >更多&gt;&gt;</a>
+     </div>
+   </div>
+   </div>
+    <div class="ct_content clearfix">
+    <div class="ct_content_l">
+ 		<ul>
+ 		  <!--{foreach from=$goods_cat['children'] item=children}-->
+ 		  <li><a href="category.php?id={$children.cat_id}">{$children.cat_name}</a></li>
+ 		   <!--{/foreach}-->
+        </ul>
+      <!--{foreach from=$goods_cat['isbestgood'] item=isbest}-->
+        <a href="{$isbest.url}"><img src="{$isbest.goods_thumb}" width="188" height="188" style="margin-top:30px"></a>
+       <!--{/foreach}--> 
+    </div>
+    <div class="clearfix ct_content_r" style="border:none;">
+      <!--{foreach from=$cat_goods item=goods}-->
+      <div class="ct_content_item">
+           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="ct_content_img" /></a><br />
+           <p class="ct_content_p"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
+           <!-- {if $goods.promote_price neq ""} -->
+          <font class="ct_content_pr">{$goods.promote_price}</font>
+          <!-- {else}-->
+          <font class="ct_content_pr">{$goods.shop_price}</font>
+          <!--{/if}-->
+        </div>
+      <!--{/foreach}-->
+    </div>
+    </div>
+ 
+</div>

@@ -1,0 +1,46 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="box ct_goods">
+    <div class="itemTit" id="itemNew">
+  <div class="ctg_title clearfix">
+    <div class="ctg_title_l_2">
+   {$cat_goods2.name|escape:html}
+   </div>
+     <div class="ctg_title_r"> 
+    <a href="{$cat_goods2.url}" >更多&gt;&gt;</a>
+     </div>
+   </div>
+   </div>
+    <div class="ct_content clearfix">
+    <div class="ct_content_l">
+    	<ul>
+        	<li><a href="#">空调</a></li>
+            <li><a href="#">烟机/灶具</a></li>
+            <li><a href="#">厨房电器</a></li>
+            <li><a href="#">冰箱</a></li>
+            <li><a href="#">手机配件</a></li>
+            <li><a href="#">热水器</a></li>
+            <li><a href="#">生活电器</a></li>
+            <li><a href="#">平板电视</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">个护健康</a></li>
+            <li><a href="#">洗衣机</a></li>
+            <li><a href="#">话费补贴</a></li>
+        </ul>
+        <img src="../images/jj.jpg" width="188" height="200" style="margin-top:20px">
+    </div>
+    <div class="clearfix ct_content_r" style="border:none;">
+      <!--{foreach from=$cat_goods_31 item=goods}-->
+      <div class="ct_content_item">
+           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="ct_content_img" /></a><br />
+           <p class="ct_content_p"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
+           <!-- {if $goods.promote_price neq ""} -->
+          <font class="ct_content_pr">{$goods.promote_price}</font>
+          <!-- {else}-->
+          <font class="ct_content_pr">{$goods.shop_price}</font>
+          <!--{/if}-->
+        </div>
+      <!--{/foreach}-->
+    </div>
+    </div>
+ 
+</div>

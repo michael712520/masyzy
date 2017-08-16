@@ -1,0 +1,42 @@
+img { border:none;} body{ margin:0;} h2 {margin:0;}
+#left-frame { background-color:#e0e0e0; }
+.sp_dy { margin:0 auto; width:800px; margin-top: 105px; }
+.sp_dy_1 { overflow:hidden; z-index: 999;}
+.sp_dy_11 { position: relative; float:left; width:285px;height:285px;border:2px solid #d1dce0;}
+.sp_dy_12 { float:right; width:480px;}
+.sp_dy_12 p { font-size:17px;color:#333333;height:38px;line-height:38px;margin:0;}
+.sp_dy_12 h2 { font-size:24px;color:#333;line-height:38px;margin:0 0 20px 0;}
+.bg_1 {background-color:#f2f2f2;}
+.bg_2 { background-color:#fff;}
+.sp_dy_12 span { width:180px;display:inline-block;}
+.sp_dy_img { position: absolute;z-index: -1;top:0; left:0;width: 100%;height: 100%}
+
+.ppt_head { width: 100%;height: 51px; background:url(imges/ppt_hbg.png)repeat-x;line-height:51px;}
+.ppt_head_1 { float: left; width: 200px; padding-left:10px; }
+.ppt_head_1 img { margin-top: 6px; }
+.ppt_head_2 { float: right; width: auto; }
+.head_2_1 { float: right; width: auto;}
+.head_2_2 { float: right; width: 61px; color: #fff; }
+.head_2_2 a { color:#fff; text-decoration:none;}
+.ppt_nav { margin:0;overflow:hidden; height: 71px;width:}
+.ppt_nav_l { overflow:hidden; width:308px; height:71px;background-color:#e0e0e0;border-left: 1px solid #c3c3c3;margin:0;float:left;}
+.pnav_l { float: left; width: 154px;height: 71px; }
+.pnav_l_1 { background:url(imges/line.png)no-repeat right; }
+.nav_l_1 { width: 77px;height:71px;text-align:center;margin:0;float:left;}
+.nav_l_1 img { margin-top: 16px;}
+
+.ppt_nav_r { float: right; width: auto; }
+
+.dy_sx { margin-top: 21px; z-index: 999; }
+.dy_sx h2 { color:#fff;background-color:#a6a6a6;height:26px;line-height:26px;padding-left:10px;margin:0;font-size:14px;font-weight:normal;}
+.dy_sx_1 { min-height: 300px; }
+
+.hd_left { width:100%;height:100%;} 
+.hd_left h2 { height:23px;line-height:23px;border-bottom:1px solid #cbcbcb; text-align:center;font-size:12px;}
+.left_ppt { height:130px; width:176px;position: relative;}
+.left_ppt_1 { position: absolute; z-index: 999; top:12%; left:10%; width:136px;height:100px; overflow:hidden; font-size:0.001em;}
+.left_ppt_1 .first_img { margin:15px 0 0 15px; float:left; width:40px; height: 40px; }
+.left_ppt_11 { float:right;width: 60px;height:40px; overflow:hidden;font-size:0.001em;margin:15px 10px 0 0;}
+.ppt_foot { margin:5px 10px 0 15px; float:left; width:111px;}
+.ppt_foot h2 { color:#fff;background-color:#a6a6a6;height:8px;line-height:8px;padding-left:2px;margin:0;font-size:0.001em;font-weight:normal; overflow:hidden;}
+.left_ppt .second_img { position: absolute; z-index: 1000; top:12%; left:13%;height:100px; overflow:hidden; font-size:0.001em;} 

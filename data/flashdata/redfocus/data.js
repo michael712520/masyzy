@@ -1,0 +1,25 @@
+imgUrl1="data/afficheimg/20161207ptpkcn.jpg";
+imgtext1="砂锅";
+imgLink1=escape("http://www.maslp.cn./goods.php?id=2253");
+imgUrl2="data/afficheimg/20161207cjwvpp.jpg";
+imgtext2="花茶";
+imgLink2=escape("http://www.maslp.cn./goods.php?id=2251");
+imgUrl3="data/afficheimg/20161207xygwbh.jpg";
+imgtext3="坚果";
+imgLink3=escape("http://http://www.maslp.cn./admin/index.php");
+imgUrl4="data/afficheimg/20151007xrjtjw.jpg";
+imgtext4="U型枕";
+imgLink4=escape("http://www.maslp.cn/goods.php?id=2194");
+imgUrl5="data/afficheimg/20150725cxprwl.jpg";
+imgtext5="原汁机";
+imgLink5=escape("http://www.maslp.cn/goods.php?id=1707");
+imgUrl6="data/afficheimg/20160821vhksaa.jpg";
+imgtext6="红酒";
+imgLink6=escape("http://www.maslp.cn./goods.php?id=2231");
+imgUrl7="data/afficheimg/20150723bmnvtu.jpg";
+imgtext7="帐篷";
+imgLink7=escape("http://www.maslp.cn/goods.php?id=1617");
+
+var pics=imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4+"|"+imgUrl5+"|"+imgUrl6+"|"+imgUrl7;
+var links=imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4+"|"+imgLink5+"|"+imgLink6+"|"+imgLink7;
+var texts=imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4+"|"+imgtext5+"|"+imgtext6+"|"+imgtext7;

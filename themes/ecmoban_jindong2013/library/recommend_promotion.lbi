@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<div class="box">
+  <div class="hdcx_span"><em>特价商品</em></div>
+  <div class="hdcx_list">
+    <div class=" clearfix"> 
+      <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+      
+      <div class="hdcx_goods clearfix" {if $smarty.foreach.promotion_foreach.iteration<9}style="border-bottom:1px dashed #cccccc"{/if}>
+        <div class="goodsimg"><a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}" /></a></div>
+        <div class="hdcx_pn">
+        <p class="hdcx_pn1">
+         <font class="f1">{$goods.promote_price}</font><font class="market" style="margin-left:5px;">{$goods.market_price}</font>
+         </p>
+          <p class="hdcx_pn2"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.goods_style_name}&nbsp;&nbsp;{insert name='attr' aid=185 gid=$goods.id}&nbsp;&nbsp;{insert name='attr' aid=178 gid=$goods.id}</a></p>
+        </div>
+      </div>
+      <!--{/foreach}--> 
+    </div>
+  </div>
+</div>
+<div class="blank"></div>
+<!-- {/if} -->

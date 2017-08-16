@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>sss</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="../animated_favicon.gif" type="image/gif" />
+<link href="../themes/ecmoban_jindong2013/style.css" rel="stylesheet" type="text/css" />
+<link href="../themes/ecmoban_jindong2013/css/admin_ppt.css" rel="stylesheet" type="text/css">
+
+{* 包含脚本文件 *} {insert_scripts files='yzyif.js'}
+</head>
+<body>
+<link href="../themes/ecmoban_jindong2013/css/all.css" rel="stylesheet" type="text/css" />
+<link href="../themes/ecmoban_jindong2013/css/index_nav.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div class="clearfix goodsBox" style="border: none; padding: 11px 0 10px 5px;">
+<form action="basicppt.php" >
+<input name="act" type="text"  value="listshopedit" style="display: none;"/>
+<div class="clearfix">
+	<!--{foreach from=$goods_list item=goods}-->
+			<!-- {if $goods.goods_id} -->
+		  <div class="goodsItem">
+				 <img src="../{$goods.imagesp}"   class="goodsimg" />
+			<p style="margin:5px 0;">{$goods.name}</a></p>
+			 <p style="margin:5px 0;height:24px;">市场价：<font class="shop_s"><input name="scj_{$goods.goods_id}" type="text"  value="{$goods.scj}" 
+			 style="color:#e42e2f;"/></font></p>
+			 <p style="height:24px;">优惠价： <font class="shop_s"><input name="yhj_{$goods.goods_id}" type="text"  value="{$goods.yhj}"
+			 style="color:#e42e2f;"/></font></p>
+			 <a href="javascript:;" ; onclick="yzyif.removegood({$goods.goods_id})" 
+			 class="ppt_scsp">删除商品</a>
+		 </div>
+		<!--{/if}--> 
+<!--{/foreach}-->
+<br/>
+</div>
+<p><input type="submit" style="width:100px;height:24px;font-size:14px;line-height:24px;"></p>
+</form>
+</div>
+</body>
+</html>
