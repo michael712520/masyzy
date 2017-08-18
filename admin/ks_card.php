@@ -500,6 +500,7 @@ if ($_REQUEST['act'] == 'insert')
     $type_mark   = !empty($_POST['type_mark']) ? trim($_POST['type_mark']) : '';
     $type_desc   = !empty($_POST['type_desc']) ? trim($_POST['type_desc']) : '';
     $type_num    = !empty($_POST['type_num']) ? trim($_POST['type_num']) : '';
+    $type_bj    = !empty($_POST['type_bj']) ? trim($_POST['type_bj']) : '';
 
     /* 初始化变量 */
 //    $type_id     = !empty($_POST['type_id'])    ? intval($_POST['type_id'])    : 0;
@@ -515,11 +516,12 @@ if ($_REQUEST['act'] == 'insert')
 
 
     /* 插入数据库。 */
-    $sql = "INSERT INTO ".$ecs->table('ks_cardcats')." (cat_name, cat_mark, cat_desc, cat_sgn)
+    $sql = "INSERT INTO ".$ecs->table('ks_cardcats')." (cat_name, cat_mark, cat_desc, cat_sgn,cat_bj)
     VALUES ('$type_name',
             '$type_mark',
             '$type_desc',
-            '$type_num')";
+            '$type_num',
+            '$type_bj')";
 
     $db->query($sql);
     

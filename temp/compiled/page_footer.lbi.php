@@ -36,10 +36,10 @@ if ($this->_foreach['num']['total'] > 0):
  <?php echo $this->_var['help_cat']['cat_name']; ?></a></dt>
  <dd>
  <ul>
-  <?php $_from = $this->_var['help_cat']['article']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'item_0_71541800_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['item_0_71541800_1502327109']):
+  <?php $_from = $this->_var['help_cat']['article']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'item');if (count($_from)):
+    foreach ($_from AS $this->_var['item']):
 ?>
-  <li class="foot_li"><a href="<?php echo $this->_var['item_0_71541800_1502327109']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['item_0_71541800_1502327109']['title']); ?>"><?php echo $this->_var['item_0_71541800_1502327109']['short_title']; ?></a></li>
+  <li class="foot_li"><a href="<?php echo $this->_var['item']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['item']['title']); ?>"><?php echo $this->_var['item']['short_title']; ?></a></li>
   <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
   </ul>
   </dd>
@@ -80,39 +80,39 @@ if ($this->_foreach['num']['total'] > 0):
  <?php if ($this->_var['service_email']): ?>
       E-mail: <?php echo $this->_var['service_email']; ?><br />
  <?php endif; ?>
- <?php $_from = $this->_var['qq']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_71672000_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['im_0_71672000_1502327109']):
+ <?php $_from = $this->_var['qq']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_33872400_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['im_0_33872400_1503036626']):
 ?>
-      <?php if ($this->_var['im_0_71672000_1502327109']): ?>
-      <a href="http://wpa.qq.com/msgrd?V=1&amp;uin=<?php echo $this->_var['im_0_71672000_1502327109']; ?>&amp;Site=<?php echo $this->_var['shop_name']; ?>&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:<?php echo $this->_var['im_0_71672000_1502327109']; ?>:4" height="16" border="0" alt="QQ" /> <?php echo $this->_var['im_0_71672000_1502327109']; ?></a>
+      <?php if ($this->_var['im_0_33872400_1503036626']): ?>
+      <a href="http://wpa.qq.com/msgrd?V=1&amp;uin=<?php echo $this->_var['im_0_33872400_1503036626']; ?>&amp;Site=<?php echo $this->_var['shop_name']; ?>&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:<?php echo $this->_var['im_0_33872400_1503036626']; ?>:4" height="16" border="0" alt="QQ" /> <?php echo $this->_var['im_0_33872400_1503036626']; ?></a>
       <?php endif; ?>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['ww']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_71721100_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['im_0_71721100_1502327109']):
+      <?php $_from = $this->_var['ww']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_33883700_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['im_0_33883700_1503036626']):
 ?>
-      <?php if ($this->_var['im_0_71721100_1502327109']): ?>
-      <a href="http://amos1.taobao.com/msg.ww?v=2&uid=<?php echo urlencode($this->_var['im_0_71721100_1502327109']); ?>&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=<?php echo urlencode($this->_var['im_0_71721100_1502327109']); ?>&s=2" width="16" height="16" border="0" alt="淘宝旺旺" /><?php echo $this->_var['im_0_71721100_1502327109']; ?></a>
+      <?php if ($this->_var['im_0_33883700_1503036626']): ?>
+      <a href="http://amos1.taobao.com/msg.ww?v=2&uid=<?php echo urlencode($this->_var['im_0_33883700_1503036626']); ?>&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=<?php echo urlencode($this->_var['im_0_33883700_1503036626']); ?>&s=2" width="16" height="16" border="0" alt="淘宝旺旺" /><?php echo $this->_var['im_0_33883700_1503036626']; ?></a>
       <?php endif; ?>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['ym']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_71764000_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['im_0_71764000_1502327109']):
+      <?php $_from = $this->_var['ym']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_33891800_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['im_0_33891800_1503036626']):
 ?>
-      <?php if ($this->_var['im_0_71764000_1502327109']): ?>
-      <a href="http://edit.yahoo.com/config/send_webmesg?.target=<?php echo $this->_var['im_0_71764000_1502327109']; ?>n&.src=pg" target="_blank"><img src="themes/ecmoban_jindong2013/images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> <?php echo $this->_var['im_0_71764000_1502327109']; ?></a>
+      <?php if ($this->_var['im_0_33891800_1503036626']): ?>
+      <a href="http://edit.yahoo.com/config/send_webmesg?.target=<?php echo $this->_var['im_0_33891800_1503036626']; ?>n&.src=pg" target="_blank"><img src="themes/ecmoban_jindong2013/images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> <?php echo $this->_var['im_0_33891800_1503036626']; ?></a>
       <?php endif; ?>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['msn']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_71798600_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['im_0_71798600_1502327109']):
+      <?php $_from = $this->_var['msn']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_33902500_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['im_0_33902500_1503036626']):
 ?>
-      <?php if ($this->_var['im_0_71798600_1502327109']): ?>
-      <img src="themes/ecmoban_jindong2013/images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact=<?php echo $this->_var['im_0_71798600_1502327109']; ?>"><?php echo $this->_var['im_0_71798600_1502327109']; ?></a>
+      <?php if ($this->_var['im_0_33902500_1503036626']): ?>
+      <img src="themes/ecmoban_jindong2013/images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact=<?php echo $this->_var['im_0_33902500_1503036626']; ?>"><?php echo $this->_var['im_0_33902500_1503036626']; ?></a>
       <?php endif; ?>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-      <?php $_from = $this->_var['skype']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_71845100_1502327109');if (count($_from)):
-    foreach ($_from AS $this->_var['im_0_71845100_1502327109']):
+      <?php $_from = $this->_var['skype']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'im_0_33909800_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['im_0_33909800_1503036626']):
 ?>
-      <?php if ($this->_var['im_0_71845100_1502327109']): ?>
-      <img src="http://mystatus.skype.com/smallclassic/<?php echo urlencode($this->_var['im_0_71845100_1502327109']); ?>" alt="Skype" /><a href="skype:<?php echo urlencode($this->_var['im_0_71845100_1502327109']); ?>?call"><?php echo $this->_var['im_0_71845100_1502327109']; ?></a>
+      <?php if ($this->_var['im_0_33909800_1503036626']): ?>
+      <img src="http://mystatus.skype.com/smallclassic/<?php echo urlencode($this->_var['im_0_33909800_1503036626']); ?>" alt="Skype" /><a href="skype:<?php echo urlencode($this->_var['im_0_33909800_1503036626']); ?>?call"><?php echo $this->_var['im_0_33909800_1503036626']; ?></a>
       <?php endif; ?>
   <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><br />
   <?php if ($this->_var['icp_number']): ?>

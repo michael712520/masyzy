@@ -25,16 +25,16 @@
        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
     </div>
     <div class="clearfix ct_content_r" style="border:none;">
-      <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_99961700_1502327288');if (count($_from)):
-    foreach ($_from AS $this->_var['goods_0_99961700_1502327288']):
+      <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_32747000_1503036626');if (count($_from)):
+    foreach ($_from AS $this->_var['goods_0_32747000_1503036626']):
 ?>
       <div class="ct_content_item">
-           <a href="<?php echo $this->_var['goods_0_99961700_1502327288']['url']; ?>"><img src="<?php echo $this->_var['goods_0_99961700_1502327288']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_99961700_1502327288']['name']); ?>" class="ct_content_img" /></a><br />
-           <p class="ct_content_p"><a href="<?php echo $this->_var['goods_0_99961700_1502327288']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_99961700_1502327288']['name']); ?>"><?php echo htmlspecialchars($this->_var['goods_0_99961700_1502327288']['name']); ?></a></p>
-           <?php if ($this->_var['goods_0_99961700_1502327288']['promote_price'] != ""): ?>
-          <font class="ct_content_pr"><?php echo $this->_var['goods_0_99961700_1502327288']['promote_price']; ?></font>
+           <a href="<?php echo $this->_var['goods_0_32747000_1503036626']['url']; ?>"><img src="<?php echo $this->_var['goods_0_32747000_1503036626']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_32747000_1503036626']['name']); ?>" class="ct_content_img" /></a><br />
+           <p class="ct_content_p"><a href="<?php echo $this->_var['goods_0_32747000_1503036626']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_32747000_1503036626']['name']); ?>"><?php echo htmlspecialchars($this->_var['goods_0_32747000_1503036626']['name']); ?></a></p>
+           <?php if ($this->_var['goods_0_32747000_1503036626']['promote_price'] != ""): ?>
+          <font class="ct_content_pr"><?php echo $this->_var['goods_0_32747000_1503036626']['promote_price']; ?></font>
           <?php else: ?>
-          <font class="ct_content_pr"><?php echo $this->_var['goods_0_99961700_1502327288']['shop_price']; ?></font>
+          <font class="ct_content_pr"><?php echo $this->_var['goods_0_32747000_1503036626']['shop_price']; ?></font>
           <?php endif; ?>
         </div>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>

@@ -52,7 +52,7 @@ scrollAmount=3><U><FONT color=red>
   'enable_order_check' => '1',
   'default_storage' => 1,
   'bgcolor' => '#FFFFFF',
-  'visit_stats' => 'on',
+  'visit_stats' => 'off',
   'send_mail_on' => 'off',
   'auto_generate_gallery' => '1',
   'retain_original_img' => '1',
