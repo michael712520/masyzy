@@ -2,19 +2,6 @@
 $data = array (
   0 => 
   array (
-    'cat_id' => '445',
-    'cat_name' => '燕之坊',
-    'measure_unit' => '',
-    'parent_id' => '0',
-    'is_show' => '0',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '0',
-    'has_children' => '1',
-    'goods_num' => '1',
-  ),
-  1 => 
-  array (
     'cat_id' => '162',
     'cat_name' => '日化',
     'measure_unit' => '',
@@ -26,7 +13,7 @@ $data = array (
     'has_children' => '2',
     'goods_num' => '11',
   ),
-  2 => 
+  1 => 
   array (
     'cat_id' => '153',
     'cat_name' => '杯壶',
@@ -38,6 +25,19 @@ $data = array (
     'sort_order' => '0',
     'has_children' => '1',
     'goods_num' => 0,
+  ),
+  2 => 
+  array (
+    'cat_id' => '445',
+    'cat_name' => '燕之坊',
+    'measure_unit' => '',
+    'parent_id' => '0',
+    'is_show' => '0',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '0',
+    'has_children' => '1',
+    'goods_num' => '1',
   ),
   3 => 
   array (
@@ -327,58 +327,6 @@ $data = array (
   ),
   25 => 
   array (
-    'cat_id' => '333',
-    'cat_name' => '微信产品',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  26 => 
-  array (
-    'cat_id' => '114',
-    'cat_name' => '体温计',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  27 => 
-  array (
-    'cat_id' => '111',
-    'cat_name' => '按摩枕',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  28 => 
-  array (
-    'cat_id' => '106',
-    'cat_name' => '脂肪秤、电子秤',
-    'measure_unit' => '',
-    'parent_id' => '43',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '47',
-  ),
-  29 => 
-  array (
     'cat_id' => '112',
     'cat_name' => '治疗仪',
     'measure_unit' => '',
@@ -390,7 +338,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  30 => 
+  26 => 
   array (
     'cat_id' => '109',
     'cat_name' => '电动牙刷',
@@ -403,7 +351,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  31 => 
+  27 => 
   array (
     'cat_id' => '126',
     'cat_name' => '足浴器',
@@ -416,7 +364,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  32 => 
+  28 => 
   array (
     'cat_id' => '113',
     'cat_name' => '计步器',
@@ -429,7 +377,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  33 => 
+  29 => 
   array (
     'cat_id' => '110',
     'cat_name' => '脂肪测量器',
@@ -442,7 +390,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 2,
   ),
-  34 => 
+  30 => 
   array (
     'cat_id' => '105',
     'cat_name' => '血压计',
@@ -454,6 +402,58 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 6,
+  ),
+  31 => 
+  array (
+    'cat_id' => '333',
+    'cat_name' => '微信产品',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  32 => 
+  array (
+    'cat_id' => '114',
+    'cat_name' => '体温计',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  33 => 
+  array (
+    'cat_id' => '111',
+    'cat_name' => '按摩枕',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  34 => 
+  array (
+    'cat_id' => '106',
+    'cat_name' => '脂肪秤、电子秤',
+    'measure_unit' => '',
+    'parent_id' => '43',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '47',
   ),
   35 => 
   array (
@@ -470,19 +470,6 @@ $data = array (
   ),
   36 => 
   array (
-    'cat_id' => '59',
-    'cat_name' => '耳机',
-    'measure_unit' => '',
-    'parent_id' => '50',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 6,
-  ),
-  37 => 
-  array (
     'cat_id' => '95',
     'cat_name' => '鼠标垫',
     'measure_unit' => '',
@@ -494,7 +481,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 6,
   ),
-  38 => 
+  37 => 
   array (
     'cat_id' => '140',
     'cat_name' => 'U盘',
@@ -507,7 +494,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 16,
   ),
-  39 => 
+  38 => 
   array (
     'cat_id' => '119',
     'cat_name' => '移动电源',
@@ -520,7 +507,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 24,
   ),
-  40 => 
+  39 => 
   array (
     'cat_id' => '307',
     'cat_name' => '数码套组礼盒',
@@ -532,6 +519,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
+  ),
+  40 => 
+  array (
+    'cat_id' => '59',
+    'cat_name' => '耳机',
+    'measure_unit' => '',
+    'parent_id' => '50',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 6,
   ),
   41 => 
   array (
@@ -561,19 +561,6 @@ $data = array (
   ),
   43 => 
   array (
-    'cat_id' => '403',
-    'cat_name' => '定做广告伞',
-    'measure_unit' => '',
-    'parent_id' => '53',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  44 => 
-  array (
     'cat_id' => '404',
     'cat_name' => '定做购物袋',
     'measure_unit' => '',
@@ -585,10 +572,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  45 => 
+  44 => 
   array (
     'cat_id' => '405',
     'cat_name' => '定做广告衫',
+    'measure_unit' => '',
+    'parent_id' => '53',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  45 => 
+  array (
+    'cat_id' => '403',
+    'cat_name' => '定做广告伞',
     'measure_unit' => '',
     'parent_id' => '53',
     'is_show' => '1',
@@ -626,32 +626,6 @@ $data = array (
   ),
   48 => 
   array (
-    'cat_id' => '346',
-    'cat_name' => '其他',
-    'measure_unit' => '',
-    'parent_id' => '88',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  49 => 
-  array (
-    'cat_id' => '343',
-    'cat_name' => '两件套',
-    'measure_unit' => '',
-    'parent_id' => '88',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '7',
-  ),
-  50 => 
-  array (
     'cat_id' => '344',
     'cat_name' => '三件套',
     'measure_unit' => '',
@@ -663,7 +637,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '5',
   ),
-  51 => 
+  49 => 
   array (
     'cat_id' => '345',
     'cat_name' => '四件套',
@@ -676,20 +650,33 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  52 => 
+  50 => 
   array (
-    'cat_id' => '349',
-    'cat_name' => '陶瓷刀',
+    'cat_id' => '346',
+    'cat_name' => '其他',
     'measure_unit' => '',
-    'parent_id' => '99',
+    'parent_id' => '88',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => '39',
+    'goods_num' => 0,
   ),
-  53 => 
+  51 => 
+  array (
+    'cat_id' => '343',
+    'cat_name' => '两件套',
+    'measure_unit' => '',
+    'parent_id' => '88',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '7',
+  ),
+  52 => 
   array (
     'cat_id' => '350',
     'cat_name' => '其他',
@@ -701,6 +688,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
+  ),
+  53 => 
+  array (
+    'cat_id' => '349',
+    'cat_name' => '陶瓷刀',
+    'measure_unit' => '',
+    'parent_id' => '99',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '39',
   ),
   54 => 
   array (
@@ -886,19 +886,6 @@ $data = array (
   ),
   68 => 
   array (
-    'cat_id' => '87',
-    'cat_name' => '餐具',
-    'measure_unit' => '',
-    'parent_id' => '151',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '2',
-    'goods_num' => 12,
-  ),
-  69 => 
-  array (
     'cat_id' => '448',
     'cat_name' => '砧板',
     'measure_unit' => '',
@@ -909,6 +896,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '1',
+  ),
+  69 => 
+  array (
+    'cat_id' => '87',
+    'cat_name' => '餐具',
+    'measure_unit' => '',
+    'parent_id' => '151',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '2',
+    'goods_num' => 12,
   ),
   70 => 
   array (
@@ -938,32 +938,6 @@ $data = array (
   ),
   72 => 
   array (
-    'cat_id' => '355',
-    'cat_name' => '装饰品',
-    'measure_unit' => '',
-    'parent_id' => '152',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '1',
-    'goods_num' => 0,
-  ),
-  73 => 
-  array (
-    'cat_id' => '450',
-    'cat_name' => '杯具',
-    'measure_unit' => '',
-    'parent_id' => '152',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '5',
-    'goods_num' => 0,
-  ),
-  74 => 
-  array (
     'cat_id' => '451',
     'cat_name' => '壶类',
     'measure_unit' => '',
@@ -975,7 +949,7 @@ $data = array (
     'has_children' => '6',
     'goods_num' => '9',
   ),
-  75 => 
+  73 => 
   array (
     'cat_id' => '311',
     'cat_name' => '炊具',
@@ -988,7 +962,7 @@ $data = array (
     'has_children' => '2',
     'goods_num' => 5,
   ),
-  76 => 
+  74 => 
   array (
     'cat_id' => '276',
     'cat_name' => '餐具',
@@ -1000,6 +974,32 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '5',
     'goods_num' => 30,
+  ),
+  75 => 
+  array (
+    'cat_id' => '450',
+    'cat_name' => '杯具',
+    'measure_unit' => '',
+    'parent_id' => '152',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '5',
+    'goods_num' => 0,
+  ),
+  76 => 
+  array (
+    'cat_id' => '355',
+    'cat_name' => '装饰品',
+    'measure_unit' => '',
+    'parent_id' => '152',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '1',
+    'goods_num' => 0,
   ),
   77 => 
   array (
@@ -1172,19 +1172,6 @@ $data = array (
   ),
   90 => 
   array (
-    'cat_id' => '321',
-    'cat_name' => '雨具',
-    'measure_unit' => '',
-    'parent_id' => '156',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '3',
-  ),
-  91 => 
-  array (
     'cat_id' => '310',
     'cat_name' => '指甲包套装',
     'measure_unit' => '',
@@ -1196,7 +1183,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '35',
   ),
-  92 => 
+  91 => 
   array (
     'cat_id' => '284',
     'cat_name' => '梳子',
@@ -1208,6 +1195,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '15',
+  ),
+  92 => 
+  array (
+    'cat_id' => '321',
+    'cat_name' => '雨具',
+    'measure_unit' => '',
+    'parent_id' => '156',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '3',
   ),
   93 => 
   array (
@@ -1289,58 +1289,6 @@ $data = array (
   ),
   99 => 
   array (
-    'cat_id' => '415',
-    'cat_name' => '鼠标垫',
-    'measure_unit' => '',
-    'parent_id' => '158',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  100 => 
-  array (
-    'cat_id' => '412',
-    'cat_name' => '计算器',
-    'measure_unit' => '',
-    'parent_id' => '158',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  101 => 
-  array (
-    'cat_id' => '409',
-    'cat_name' => '公文夹',
-    'measure_unit' => '',
-    'parent_id' => '158',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  102 => 
-  array (
-    'cat_id' => '406',
-    'cat_name' => '活页本',
-    'measure_unit' => '',
-    'parent_id' => '158',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  103 => 
-  array (
     'cat_id' => '413',
     'cat_name' => 'U盘',
     'measure_unit' => '',
@@ -1352,20 +1300,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  104 => 
-  array (
-    'cat_id' => '443',
-    'cat_name' => '邀请函',
-    'measure_unit' => '',
-    'parent_id' => '158',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '1',
-  ),
-  105 => 
+  100 => 
   array (
     'cat_id' => '410',
     'cat_name' => '商务签字笔',
@@ -1378,7 +1313,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  106 => 
+  101 => 
+  array (
+    'cat_id' => '443',
+    'cat_name' => '邀请函',
+    'measure_unit' => '',
+    'parent_id' => '158',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  102 => 
   array (
     'cat_id' => '407',
     'cat_name' => '笔记本',
@@ -1391,7 +1339,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  107 => 
+  103 => 
   array (
     'cat_id' => '414',
     'cat_name' => '移动电源',
@@ -1404,7 +1352,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  108 => 
+  104 => 
   array (
     'cat_id' => '411',
     'cat_name' => '名片盒',
@@ -1417,10 +1365,62 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  109 => 
+  105 => 
   array (
     'cat_id' => '408',
     'cat_name' => '拉链包',
+    'measure_unit' => '',
+    'parent_id' => '158',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  106 => 
+  array (
+    'cat_id' => '415',
+    'cat_name' => '鼠标垫',
+    'measure_unit' => '',
+    'parent_id' => '158',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  107 => 
+  array (
+    'cat_id' => '412',
+    'cat_name' => '计算器',
+    'measure_unit' => '',
+    'parent_id' => '158',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  108 => 
+  array (
+    'cat_id' => '409',
+    'cat_name' => '公文夹',
+    'measure_unit' => '',
+    'parent_id' => '158',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  109 => 
+  array (
+    'cat_id' => '406',
+    'cat_name' => '活页本',
     'measure_unit' => '',
     'parent_id' => '158',
     'is_show' => '1',
@@ -1484,19 +1484,6 @@ $data = array (
   ),
   114 => 
   array (
-    'cat_id' => '288',
-    'cat_name' => '车载吸尘器',
-    'measure_unit' => '',
-    'parent_id' => '161',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '3',
-    'has_children' => '2',
-    'goods_num' => '2',
-  ),
-  115 => 
-  array (
     'cat_id' => '302',
     'cat_name' => '车载加湿器',
     'measure_unit' => '',
@@ -1507,6 +1494,19 @@ $data = array (
     'sort_order' => '3',
     'has_children' => '2',
     'goods_num' => '3',
+  ),
+  115 => 
+  array (
+    'cat_id' => '288',
+    'cat_name' => '车载吸尘器',
+    'measure_unit' => '',
+    'parent_id' => '161',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '3',
+    'has_children' => '2',
+    'goods_num' => '2',
   ),
   116 => 
   array (
@@ -2017,19 +2017,6 @@ $data = array (
   ),
   155 => 
   array (
-    'cat_id' => '342',
-    'cat_name' => '套装',
-    'measure_unit' => '',
-    'parent_id' => '227',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '9',
-  ),
-  156 => 
-  array (
     'cat_id' => '340',
     'cat_name' => '陶瓷',
     'measure_unit' => '',
@@ -2041,7 +2028,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  157 => 
+  156 => 
   array (
     'cat_id' => '341',
     'cat_name' => '不锈钢',
@@ -2053,6 +2040,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '3',
+  ),
+  157 => 
+  array (
+    'cat_id' => '342',
+    'cat_name' => '套装',
+    'measure_unit' => '',
+    'parent_id' => '227',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '9',
   ),
   158 => 
   array (
@@ -2121,19 +2121,6 @@ $data = array (
   ),
   163 => 
   array (
-    'cat_id' => '387',
-    'cat_name' => 'PC拉杆箱',
-    'measure_unit' => '',
-    'parent_id' => '242',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  164 => 
-  array (
     'cat_id' => '388',
     'cat_name' => '真皮商旅包',
     'measure_unit' => '',
@@ -2145,10 +2132,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  165 => 
+  164 => 
   array (
     'cat_id' => '389',
     'cat_name' => '折叠两用包',
+    'measure_unit' => '',
+    'parent_id' => '242',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  165 => 
+  array (
+    'cat_id' => '387',
+    'cat_name' => 'PC拉杆箱',
     'measure_unit' => '',
     'parent_id' => '242',
     'is_show' => '1',
@@ -2303,32 +2303,6 @@ $data = array (
   ),
   177 => 
   array (
-    'cat_id' => '254',
-    'cat_name' => '电蒸笼',
-    'measure_unit' => '',
-    'parent_id' => '263',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '1',
-  ),
-  178 => 
-  array (
-    'cat_id' => '250',
-    'cat_name' => '冰激凌机',
-    'measure_unit' => '',
-    'parent_id' => '263',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  179 => 
-  array (
     'cat_id' => '297',
     'cat_name' => '电热饭盒',
     'measure_unit' => '',
@@ -2340,7 +2314,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '7',
   ),
-  180 => 
+  178 => 
   array (
     'cat_id' => '234',
     'cat_name' => '豆浆机',
@@ -2353,7 +2327,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 3,
   ),
-  181 => 
+  179 => 
   array (
     'cat_id' => '251',
     'cat_name' => '酸奶机',
@@ -2366,7 +2340,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 5,
   ),
-  182 => 
+  180 => 
   array (
     'cat_id' => '326',
     'cat_name' => '咖啡机',
@@ -2379,7 +2353,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '4',
   ),
-  183 => 
+  181 => 
   array (
     'cat_id' => '252',
     'cat_name' => '料理机、原汁机、榨汁机',
@@ -2392,7 +2366,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 14,
   ),
-  184 => 
+  182 => 
   array (
     'cat_id' => '330',
     'cat_name' => '多功能研磨机',
@@ -2404,6 +2378,32 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '2',
+  ),
+  183 => 
+  array (
+    'cat_id' => '254',
+    'cat_name' => '电蒸笼',
+    'measure_unit' => '',
+    'parent_id' => '263',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
+  184 => 
+  array (
+    'cat_id' => '250',
+    'cat_name' => '冰激凌机',
+    'measure_unit' => '',
+    'parent_id' => '263',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
   ),
   185 => 
   array (
@@ -2485,45 +2485,6 @@ $data = array (
   ),
   191 => 
   array (
-    'cat_id' => '309',
-    'cat_name' => '插座',
-    'measure_unit' => '',
-    'parent_id' => '264',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '15',
-  ),
-  192 => 
-  array (
-    'cat_id' => '285',
-    'cat_name' => '干衣机',
-    'measure_unit' => '',
-    'parent_id' => '264',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '6',
-  ),
-  193 => 
-  array (
-    'cat_id' => '325',
-    'cat_name' => '电暖器',
-    'measure_unit' => '',
-    'parent_id' => '264',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '1',
-  ),
-  194 => 
-  array (
     'cat_id' => '258',
     'cat_name' => '风扇',
     'measure_unit' => '',
@@ -2535,7 +2496,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 16,
   ),
-  195 => 
+  192 => 
   array (
     'cat_id' => '255',
     'cat_name' => '时钟',
@@ -2548,7 +2509,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '3',
   ),
-  196 => 
+  193 => 
   array (
     'cat_id' => '286',
     'cat_name' => '果蔬解毒机',
@@ -2561,7 +2522,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  197 => 
+  194 => 
   array (
     'cat_id' => '287',
     'cat_name' => '净化器',
@@ -2574,33 +2535,46 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '11',
   ),
+  195 => 
+  array (
+    'cat_id' => '309',
+    'cat_name' => '插座',
+    'measure_unit' => '',
+    'parent_id' => '264',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '15',
+  ),
+  196 => 
+  array (
+    'cat_id' => '285',
+    'cat_name' => '干衣机',
+    'measure_unit' => '',
+    'parent_id' => '264',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '6',
+  ),
+  197 => 
+  array (
+    'cat_id' => '325',
+    'cat_name' => '电暖器',
+    'measure_unit' => '',
+    'parent_id' => '264',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
   198 => 
-  array (
-    'cat_id' => '399',
-    'cat_name' => '请柬',
-    'measure_unit' => '',
-    'parent_id' => '268',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  199 => 
-  array (
-    'cat_id' => '400',
-    'cat_name' => '吉祥物',
-    'measure_unit' => '',
-    'parent_id' => '268',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  200 => 
   array (
     'cat_id' => '401',
     'cat_name' => '纪念章/币',
@@ -2613,7 +2587,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  201 => 
+  199 => 
   array (
     'cat_id' => '402',
     'cat_name' => '定制手机壳',
@@ -2626,12 +2600,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  202 => 
+  200 => 
   array (
-    'cat_id' => '396',
-    'cat_name' => '花瓶',
+    'cat_id' => '399',
+    'cat_name' => '请柬',
     'measure_unit' => '',
-    'parent_id' => '269',
+    'parent_id' => '268',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -2639,7 +2613,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  203 => 
+  201 => 
+  array (
+    'cat_id' => '400',
+    'cat_name' => '吉祥物',
+    'measure_unit' => '',
+    'parent_id' => '268',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  202 => 
   array (
     'cat_id' => '397',
     'cat_name' => '手绘瓷器',
@@ -2652,7 +2639,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  204 => 
+  203 => 
   array (
     'cat_id' => '398',
     'cat_name' => '文房四宝',
@@ -2665,10 +2652,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  205 => 
+  204 => 
   array (
     'cat_id' => '395',
     'cat_name' => '玉器',
+    'measure_unit' => '',
+    'parent_id' => '269',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  205 => 
+  array (
+    'cat_id' => '396',
+    'cat_name' => '花瓶',
     'measure_unit' => '',
     'parent_id' => '269',
     'is_show' => '1',
@@ -2732,19 +2732,6 @@ $data = array (
   ),
   210 => 
   array (
-    'cat_id' => '91',
-    'cat_name' => '奶锅',
-    'measure_unit' => '',
-    'parent_id' => '271',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '9',
-    'has_children' => '0',
-    'goods_num' => 11,
-  ),
-  211 => 
-  array (
     'cat_id' => '226',
     'cat_name' => '水壶',
     'measure_unit' => '',
@@ -2755,6 +2742,19 @@ $data = array (
     'sort_order' => '9',
     'has_children' => '0',
     'goods_num' => 0,
+  ),
+  211 => 
+  array (
+    'cat_id' => '91',
+    'cat_name' => '奶锅',
+    'measure_unit' => '',
+    'parent_id' => '271',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '9',
+    'has_children' => '0',
+    'goods_num' => 11,
   ),
   212 => 
   array (
@@ -2875,45 +2875,6 @@ $data = array (
   ),
   221 => 
   array (
-    'cat_id' => '365',
-    'cat_name' => '保鲜碗',
-    'measure_unit' => '',
-    'parent_id' => '276',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  222 => 
-  array (
-    'cat_id' => '447',
-    'cat_name' => '玻璃碗',
-    'measure_unit' => '',
-    'parent_id' => '276',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  223 => 
-  array (
-    'cat_id' => '367',
-    'cat_name' => '情侣杯',
-    'measure_unit' => '',
-    'parent_id' => '276',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  224 => 
-  array (
     'cat_id' => '360',
     'cat_name' => '碗碟',
     'measure_unit' => '',
@@ -2925,7 +2886,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '7',
   ),
-  225 => 
+  222 => 
   array (
     'cat_id' => '356',
     'cat_name' => '杯壶',
@@ -2938,33 +2899,46 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '20',
   ),
+  223 => 
+  array (
+    'cat_id' => '447',
+    'cat_name' => '玻璃碗',
+    'measure_unit' => '',
+    'parent_id' => '276',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  224 => 
+  array (
+    'cat_id' => '365',
+    'cat_name' => '保鲜碗',
+    'measure_unit' => '',
+    'parent_id' => '276',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  225 => 
+  array (
+    'cat_id' => '367',
+    'cat_name' => '情侣杯',
+    'measure_unit' => '',
+    'parent_id' => '276',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
   226 => 
-  array (
-    'cat_id' => '432',
-    'cat_name' => '野餐式',
-    'measure_unit' => '',
-    'parent_id' => '277',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  227 => 
-  array (
-    'cat_id' => '433',
-    'cat_name' => '不锈钢式',
-    'measure_unit' => '',
-    'parent_id' => '277',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  228 => 
   array (
     'cat_id' => '430',
     'cat_name' => '拉杆箱',
@@ -2977,7 +2951,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  229 => 
+  227 => 
   array (
     'cat_id' => '429',
     'cat_name' => '手提式',
@@ -2990,7 +2964,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  230 => 
+  228 => 
   array (
     'cat_id' => '431',
     'cat_name' => '双肩背式',
@@ -3003,12 +2977,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  231 => 
+  229 => 
   array (
-    'cat_id' => '374',
-    'cat_name' => '3件套',
+    'cat_id' => '432',
+    'cat_name' => '野餐式',
     'measure_unit' => '',
-    'parent_id' => '281',
+    'parent_id' => '277',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3016,7 +2990,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  232 => 
+  230 => 
+  array (
+    'cat_id' => '433',
+    'cat_name' => '不锈钢式',
+    'measure_unit' => '',
+    'parent_id' => '277',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  231 => 
   array (
     'cat_id' => '375',
     'cat_name' => '其他',
@@ -3029,7 +3016,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  233 => 
+  232 => 
   array (
     'cat_id' => '372',
     'cat_name' => '礼盒套装',
@@ -3042,7 +3029,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  234 => 
+  233 => 
   array (
     'cat_id' => '373',
     'cat_name' => '2件套',
@@ -3055,20 +3042,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  235 => 
+  234 => 
   array (
-    'cat_id' => '377',
-    'cat_name' => '幽兰花中式保鲜碗',
+    'cat_id' => '374',
+    'cat_name' => '3件套',
     'measure_unit' => '',
-    'parent_id' => '283',
+    'parent_id' => '281',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => '1',
+    'goods_num' => 0,
   ),
-  236 => 
+  235 => 
   array (
     'cat_id' => '378',
     'cat_name' => '陶瓷保温饭盒',
@@ -3081,7 +3068,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  237 => 
+  236 => 
   array (
     'cat_id' => '376',
     'cat_name' => '优质镁质瓷保鲜盘',
@@ -3094,10 +3081,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
+  237 => 
+  array (
+    'cat_id' => '377',
+    'cat_name' => '幽兰花中式保鲜碗',
+    'measure_unit' => '',
+    'parent_id' => '283',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
   238 => 
   array (
-    'cat_id' => '419',
-    'cat_name' => '车载吸尘器',
+    'cat_id' => '418',
+    'cat_name' => '两用吸尘器',
     'measure_unit' => '',
     'parent_id' => '288',
     'is_show' => '1',
@@ -3109,8 +3109,8 @@ $data = array (
   ),
   239 => 
   array (
-    'cat_id' => '418',
-    'cat_name' => '两用吸尘器',
+    'cat_id' => '419',
+    'cat_name' => '车载吸尘器',
     'measure_unit' => '',
     'parent_id' => '288',
     'is_show' => '1',
@@ -3148,32 +3148,6 @@ $data = array (
   ),
   242 => 
   array (
-    'cat_id' => '383',
-    'cat_name' => '野餐包',
-    'measure_unit' => '',
-    'parent_id' => '291',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  243 => 
-  array (
-    'cat_id' => '384',
-    'cat_name' => '洗漱收纳包',
-    'measure_unit' => '',
-    'parent_id' => '291',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  244 => 
-  array (
     'cat_id' => '385',
     'cat_name' => '商务休闲包',
     'measure_unit' => '',
@@ -3185,7 +3159,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  245 => 
+  243 => 
   array (
     'cat_id' => '382',
     'cat_name' => '登山包',
@@ -3198,10 +3172,36 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  246 => 
+  244 => 
   array (
     'cat_id' => '386',
     'cat_name' => '电脑双肩包',
+    'measure_unit' => '',
+    'parent_id' => '291',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  245 => 
+  array (
+    'cat_id' => '383',
+    'cat_name' => '野餐包',
+    'measure_unit' => '',
+    'parent_id' => '291',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  246 => 
+  array (
+    'cat_id' => '384',
+    'cat_name' => '洗漱收纳包',
     'measure_unit' => '',
     'parent_id' => '291',
     'is_show' => '1',
@@ -3226,19 +3226,6 @@ $data = array (
   ),
   248 => 
   array (
-    'cat_id' => '380',
-    'cat_name' => '方形饭盒（双层）',
-    'measure_unit' => '',
-    'parent_id' => '295',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  249 => 
-  array (
     'cat_id' => '381',
     'cat_name' => '密扣保鲜盒',
     'measure_unit' => '',
@@ -3250,7 +3237,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  250 => 
+  249 => 
   array (
     'cat_id' => '379',
     'cat_name' => '不锈钢保温瓶饭盒',
@@ -3263,12 +3250,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  251 => 
+  250 => 
   array (
-    'cat_id' => '352',
-    'cat_name' => '两件套',
+    'cat_id' => '380',
+    'cat_name' => '方形饭盒（双层）',
     'measure_unit' => '',
-    'parent_id' => '296',
+    'parent_id' => '295',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3276,7 +3263,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  252 => 
+  251 => 
   array (
     'cat_id' => '353',
     'cat_name' => '三家套',
@@ -3289,7 +3276,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  253 => 
+  252 => 
   array (
     'cat_id' => '354',
     'cat_name' => '其他',
@@ -3302,7 +3289,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  254 => 
+  253 => 
   array (
     'cat_id' => '351',
     'cat_name' => '一件套',
@@ -3315,12 +3302,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  255 => 
+  254 => 
   array (
-    'cat_id' => '438',
-    'cat_name' => '行车记录仪',
+    'cat_id' => '352',
+    'cat_name' => '两件套',
     'measure_unit' => '',
-    'parent_id' => '298',
+    'parent_id' => '296',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3328,7 +3315,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  256 => 
+  255 => 
   array (
     'cat_id' => '439',
     'cat_name' => '夜视功能行车记录仪',
@@ -3341,12 +3328,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  257 => 
+  256 => 
   array (
-    'cat_id' => '422',
-    'cat_name' => '多功能伸缩整理箱',
+    'cat_id' => '438',
+    'cat_name' => '行车记录仪',
     'measure_unit' => '',
-    'parent_id' => '299',
+    'parent_id' => '298',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3354,7 +3341,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  258 => 
+  257 => 
   array (
     'cat_id' => '423',
     'cat_name' => '充气泵',
@@ -3367,7 +3354,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '1',
   ),
-  259 => 
+  258 => 
   array (
     'cat_id' => '420',
     'cat_name' => '手机支架',
@@ -3380,7 +3367,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  260 => 
+  259 => 
   array (
     'cat_id' => '421',
     'cat_name' => '车载充电器',
@@ -3393,12 +3380,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  261 => 
+  260 => 
   array (
-    'cat_id' => '416',
-    'cat_name' => '房子加湿器',
+    'cat_id' => '422',
+    'cat_name' => '多功能伸缩整理箱',
     'measure_unit' => '',
-    'parent_id' => '302',
+    'parent_id' => '299',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3406,7 +3393,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  262 => 
+  261 => 
   array (
     'cat_id' => '417',
     'cat_name' => '可爱加湿器',
@@ -3419,12 +3406,12 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  263 => 
+  262 => 
   array (
-    'cat_id' => '337',
-    'cat_name' => '颈椎枕',
+    'cat_id' => '416',
+    'cat_name' => '房子加湿器',
     'measure_unit' => '',
-    'parent_id' => '303',
+    'parent_id' => '302',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
@@ -3432,7 +3419,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  264 => 
+  263 => 
   array (
     'cat_id' => '335',
     'cat_name' => '血压仪',
@@ -3445,7 +3432,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  265 => 
+  264 => 
   array (
     'cat_id' => '336',
     'cat_name' => '脂肪秤',
@@ -3458,20 +3445,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  266 => 
+  265 => 
   array (
-    'cat_id' => '357',
-    'cat_name' => '煲锅',
+    'cat_id' => '337',
+    'cat_name' => '颈椎枕',
     'measure_unit' => '',
-    'parent_id' => '311',
+    'parent_id' => '303',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => '9',
+    'goods_num' => 0,
   ),
-  267 => 
+  266 => 
   array (
     'cat_id' => '364',
     'cat_name' => '陶瓷煎锅',
@@ -3484,20 +3471,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  268 => 
+  267 => 
   array (
-    'cat_id' => '393',
-    'cat_name' => '干货特产',
+    'cat_id' => '357',
+    'cat_name' => '煲锅',
     'measure_unit' => '',
-    'parent_id' => '312',
+    'parent_id' => '311',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => '17',
+    'goods_num' => '9',
   ),
-  269 => 
+  268 => 
   array (
     'cat_id' => '394',
     'cat_name' => '节日礼盒',
@@ -3510,7 +3497,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '1',
   ),
-  270 => 
+  269 => 
   array (
     'cat_id' => '391',
     'cat_name' => '五谷杂粮大礼包',
@@ -3523,7 +3510,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  271 => 
+  270 => 
   array (
     'cat_id' => '392',
     'cat_name' => '食尚礼盒',
@@ -3535,6 +3522,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
+  ),
+  271 => 
+  array (
+    'cat_id' => '393',
+    'cat_name' => '干货特产',
+    'measure_unit' => '',
+    'parent_id' => '312',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '17',
   ),
   272 => 
   array (
@@ -3551,45 +3551,6 @@ $data = array (
   ),
   273 => 
   array (
-    'cat_id' => '428',
-    'cat_name' => '帐篷/睡袋',
-    'measure_unit' => '',
-    'parent_id' => '424',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '10',
-  ),
-  274 => 
-  array (
-    'cat_id' => '435',
-    'cat_name' => '登山杖',
-    'measure_unit' => '',
-    'parent_id' => '424',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '1',
-  ),
-  275 => 
-  array (
-    'cat_id' => '425',
-    'cat_name' => '烧烤炉',
-    'measure_unit' => '',
-    'parent_id' => '424',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '7',
-  ),
-  276 => 
-  array (
     'cat_id' => '434',
     'cat_name' => '沙滩椅',
     'measure_unit' => '',
@@ -3601,7 +3562,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '4',
   ),
-  277 => 
+  274 => 
   array (
     'cat_id' => '440',
     'cat_name' => '户外旅行包',
@@ -3614,7 +3575,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '13',
   ),
-  278 => 
+  275 => 
   array (
     'cat_id' => '436',
     'cat_name' => '钓鱼凳',
@@ -3627,7 +3588,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '1',
   ),
-  279 => 
+  276 => 
   array (
     'cat_id' => '427',
     'cat_name' => '野餐垫',
@@ -3640,7 +3601,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '5',
   ),
-  280 => 
+  277 => 
   array (
     'cat_id' => '437',
     'cat_name' => '吊床',
@@ -3652,6 +3613,45 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => '2',
+  ),
+  278 => 
+  array (
+    'cat_id' => '428',
+    'cat_name' => '帐篷/睡袋',
+    'measure_unit' => '',
+    'parent_id' => '424',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '10',
+  ),
+  279 => 
+  array (
+    'cat_id' => '425',
+    'cat_name' => '烧烤炉',
+    'measure_unit' => '',
+    'parent_id' => '424',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '7',
+  ),
+  280 => 
+  array (
+    'cat_id' => '435',
+    'cat_name' => '登山杖',
+    'measure_unit' => '',
+    'parent_id' => '424',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
   ),
   281 => 
   array (
@@ -3668,19 +3668,6 @@ $data = array (
   ),
   282 => 
   array (
-    'cat_id' => '460',
-    'cat_name' => '骨瓷杯',
-    'measure_unit' => '',
-    'parent_id' => '450',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '25',
-  ),
-  283 => 
-  array (
     'cat_id' => '461',
     'cat_name' => '塑料杯',
     'measure_unit' => '',
@@ -3692,7 +3679,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '2',
   ),
-  284 => 
+  283 => 
   array (
     'cat_id' => '458',
     'cat_name' => '保温杯',
@@ -3705,7 +3692,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '75',
   ),
-  285 => 
+  284 => 
   array (
     'cat_id' => '462',
     'cat_name' => '陶瓷杯',
@@ -3718,7 +3705,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  286 => 
+  285 => 
   array (
     'cat_id' => '459',
     'cat_name' => '玻璃杯',
@@ -3731,46 +3718,20 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '69',
   ),
+  286 => 
+  array (
+    'cat_id' => '460',
+    'cat_name' => '骨瓷杯',
+    'measure_unit' => '',
+    'parent_id' => '450',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '25',
+  ),
   287 => 
-  array (
-    'cat_id' => '453',
-    'cat_name' => '保温壶',
-    'measure_unit' => '',
-    'parent_id' => '451',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  288 => 
-  array (
-    'cat_id' => '457',
-    'cat_name' => '品茶壶',
-    'measure_unit' => '',
-    'parent_id' => '451',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  289 => 
-  array (
-    'cat_id' => '454',
-    'cat_name' => '凉水壶',
-    'measure_unit' => '',
-    'parent_id' => '451',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  290 => 
   array (
     'cat_id' => '455',
     'cat_name' => '电水壶',
@@ -3783,7 +3744,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  291 => 
+  288 => 
   array (
     'cat_id' => '452',
     'cat_name' => '旅游壶',
@@ -3796,7 +3757,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '4',
   ),
-  292 => 
+  289 => 
   array (
     'cat_id' => '456',
     'cat_name' => '咖啡壶',
@@ -3809,20 +3770,46 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
-  293 => 
+  290 => 
   array (
-    'cat_id' => '467',
-    'cat_name' => '元旦',
+    'cat_id' => '453',
+    'cat_name' => '保温壶',
     'measure_unit' => '',
-    'parent_id' => '463',
+    'parent_id' => '451',
     'is_show' => '1',
     'show_in_nav' => '0',
     'grade' => '0',
     'sort_order' => '50',
     'has_children' => '0',
-    'goods_num' => '1',
+    'goods_num' => 0,
   ),
-  294 => 
+  291 => 
+  array (
+    'cat_id' => '457',
+    'cat_name' => '品茶壶',
+    'measure_unit' => '',
+    'parent_id' => '451',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  292 => 
+  array (
+    'cat_id' => '454',
+    'cat_name' => '凉水壶',
+    'measure_unit' => '',
+    'parent_id' => '451',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+  ),
+  293 => 
   array (
     'cat_id' => '474',
     'cat_name' => '橄榄油',
@@ -3835,7 +3822,7 @@ $data = array (
     'has_children' => '0',
     'goods_num' => '1',
   ),
-  295 => 
+  294 => 
   array (
     'cat_id' => '464',
     'cat_name' => '端午',
@@ -3848,7 +3835,7 @@ $data = array (
     'has_children' => '3',
     'goods_num' => 0,
   ),
-  296 => 
+  295 => 
   array (
     'cat_id' => '465',
     'cat_name' => '中秋',
@@ -3861,7 +3848,7 @@ $data = array (
     'has_children' => '2',
     'goods_num' => 0,
   ),
-  297 => 
+  296 => 
   array (
     'cat_id' => '468',
     'cat_name' => '燕之坊',
@@ -3874,10 +3861,23 @@ $data = array (
     'has_children' => '0',
     'goods_num' => 0,
   ),
+  297 => 
+  array (
+    'cat_id' => '467',
+    'cat_name' => '元旦',
+    'measure_unit' => '',
+    'parent_id' => '463',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '1',
+  ),
   298 => 
   array (
-    'cat_id' => '470',
-    'cat_name' => '端午粽子',
+    'cat_id' => '471',
+    'cat_name' => '端午鸭蛋',
     'measure_unit' => '',
     'parent_id' => '464',
     'is_show' => '1',
@@ -3902,8 +3902,8 @@ $data = array (
   ),
   300 => 
   array (
-    'cat_id' => '471',
-    'cat_name' => '端午鸭蛋',
+    'cat_id' => '470',
+    'cat_name' => '端午粽子',
     'measure_unit' => '',
     'parent_id' => '464',
     'is_show' => '1',
@@ -3915,19 +3915,6 @@ $data = array (
   ),
   301 => 
   array (
-    'cat_id' => '473',
-    'cat_name' => '中秋红酒',
-    'measure_unit' => '',
-    'parent_id' => '465',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => '5',
-  ),
-  302 => 
-  array (
     'cat_id' => '469',
     'cat_name' => '中秋月饼',
     'measure_unit' => '',
@@ -3938,6 +3925,19 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
+  ),
+  302 => 
+  array (
+    'cat_id' => '473',
+    'cat_name' => '中秋红酒',
+    'measure_unit' => '',
+    'parent_id' => '465',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => '5',
   ),
 );
 ?>

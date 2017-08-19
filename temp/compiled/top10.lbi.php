@@ -1,9 +1,9 @@
 <div class="box top10">
   <div class="goods_table"><strong>销售排行榜</strong></div> 
   <div class="top10List clearfix">
-  <?php $_from = $this->_var['top_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_33398900_1503036626');$this->_foreach['top_goods'] = array('total' => count($_from), 'iteration' => 0);
+  <?php $_from = $this->_var['top_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_52673900_1503064212');$this->_foreach['top_goods'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['top_goods']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_33398900_1503036626']):
+    foreach ($_from AS $this->_var['goods_0_52673900_1503064212']):
         $this->_foreach['top_goods']['iteration']++;
 ?>
   <?php if ($this->_foreach['top_goods']['iteration'] < 6): ?>
@@ -11,12 +11,12 @@ if ($this->_foreach['top_goods']['total'] > 0):
 	<img src="themes/ecmoban_jindong2013/images/top_<?php echo $this->_foreach['top_goods']['iteration']; ?>.gif" class="iteration" />
 	
       <li class="topimg">
-      <a href="<?php echo $this->_var['goods_0_33398900_1503036626']['url']; ?>"><img src="<?php echo $this->_var['goods_0_33398900_1503036626']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_33398900_1503036626']['name']); ?>" class="samllimg" /></a>
+      <a href="<?php echo $this->_var['goods_0_52673900_1503064212']['url']; ?>"><img src="<?php echo $this->_var['goods_0_52673900_1503064212']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_52673900_1503064212']['name']); ?>" class="samllimg" /></a>
       </li>
 
       <li>
-      <p class="h_l"><a href="<?php echo $this->_var['goods_0_33398900_1503036626']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_33398900_1503036626']['name']); ?>"><?php echo $this->_var['goods_0_33398900_1503036626']['goods_name']; ?></a></p>
-      <p class="h_l"><font class="f1"><?php echo $this->_var['goods_0_33398900_1503036626']['price']; ?></font></p>
+      <p class="h_l"><a href="<?php echo $this->_var['goods_0_52673900_1503064212']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_52673900_1503064212']['name']); ?>"><?php echo $this->_var['goods_0_52673900_1503064212']['goods_name']; ?></a></p>
+      <p class="h_l"><font class="f1"><?php echo $this->_var['goods_0_52673900_1503064212']['price']; ?></font></p>
       </li>
      	
     </ul>	
