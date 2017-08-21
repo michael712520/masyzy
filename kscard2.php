@@ -76,50 +76,50 @@ if ($action == 'act_login') {
              if (empty($record_arr))
 
              {
-                 show_message('卡号或密码错误'); 
+                 show_message_wx('卡号或密码错误');
                  return 0;
              }
-             else 
-             { 
+             else
+             {
              	  if($record_arr['order_id'] == 0)
              	  {
              	  assign_template();
-                $smarty->assign('page_title', '用户礼品卡管理');    
-                $smarty->assign('ur_here',    '礼品卡'); 
-                $smarty->assign('helps',      get_shop_help());    
-                $smarty->assign('act',    'update_kscard');    
-                $smarty->assign('action',      $action);   
-                $smarty->assign('back_act',     $back_act);  
+                $smarty->assign('page_title', '用户礼品卡管理');
+                $smarty->assign('ur_here',    '礼品卡');
+                $smarty->assign('helps',      get_shop_help());
+                $smarty->assign('act',    'update_kscard');
+                $smarty->assign('action',      $action);
+                $smarty->assign('back_act',     $back_act);
                 $smarty->assign('card_sn',      $card_sn);
                 $smarty->assign('card_id',      $record_arr['card_id']);
-                $smarty->assign('card_pwd',     $card_pwd); 
-                $smarty->assign('card_type',    $record_arr['card_type']);  
-                $smarty->assign('goods_list',    get_order_goods_list($record_arr['card_type'])); 
-                $smarty->assign('sel_num',    get_goods_num($record_arr['card_type']));     
+                $smarty->assign('card_pwd',     $card_pwd);
+                $smarty->assign('card_type',    $record_arr['card_type']);
+                $smarty->assign('goods_list',    get_order_goods_list($record_arr['card_type']));
+                $smarty->assign('sel_num',    get_goods_num($record_arr['card_type']));
                 $smarty->display('kscard2.dwt');
                 }
                 else
                 {
                  assign_template();
-                $smarty->assign('page_title', '用户礼品卡管理');    
-                $smarty->assign('ur_here',    '礼品卡'); 
-                $smarty->assign('helps',      get_shop_help());    
-                $smarty->assign('act',        'order_info');    
-                $smarty->assign('action',     'order_info');   
-                
+                $smarty->assign('page_title', '用户礼品卡管理');
+                $smarty->assign('ur_here',    '礼品卡');
+                $smarty->assign('helps',      get_shop_help());
+                $smarty->assign('act',        'order_info');
+                $smarty->assign('action',     'order_info');
+
                 $order_id = $record_arr['order_id'];
                 $list = $db->getRow("SELECT * FROM " .$ecs->table('ks_order'). " WHERE order_id = '$order_id'");
                 $order_time = local_date("Y-h-d H:i:s", $list[order_time]);
                 $smarty->assign('order_time',    $order_time);
-                $smarty->assign('order',    $list);  
+                $smarty->assign('order',    $list);
                 $smarty->display('kscard2.dwt');
                 }
-                
+
              }
         }
 
 }
-    
+
 /* 提交客户订单 */
 
 if ($action == 'update_kscard')
@@ -130,62 +130,62 @@ if ($action == 'update_kscard')
 	$order_phone    = isset($_REQUEST['order_phone'])? trim($_REQUEST['order_phone']): '0';
 	$order_bak    = isset($_REQUEST['order_bak'])? trim($_REQUEST['order_bak']): '0';
 	$shipping_time    = isset($_REQUEST['shipping_time'])? trim($_REQUEST['shipping_time']): '0';
-	
+
 	$arr       = array();
 	$arr       = $_POST['goods'];
   $goods_num = count($arr);
 	$goods     = !empty($arr) ? join(",",$arr) : '0';
-	
+
   $card_sn    = isset($_REQUEST['card_sn'])? trim($_REQUEST['card_sn']): '0';
 	$card_pwd   = isset($_REQUEST['card_pwd'])? trim($_REQUEST['card_pwd']): '0';
 	$card_type   = !empty($_REQUEST['card_type'])? intval($_REQUEST['card_type']): 0;
-	
+
 	$sel_num   = !empty($_REQUEST['sel_num'])? intval($_REQUEST['sel_num']): 0;
-	
+
 	$card_id   = !empty($_REQUEST['card_id'])? intval($_REQUEST['card_id']): 0;
 
             if (empty($order_user) OR (empty($order_tel) AND empty($order_phone)))
              {
-                 show_message('联系人为必填项,电话任选其一.'); 
+                 show_message_wx('联系人为必填项,电话任选其一.');
                  return 0;
              }
              if (empty($arr))
              {
-                 show_message('请选择商品'); 
+                 show_message_wx('请选择商品');
                  return 0;
              }
              if ($sel_num <> $goods_num)
              {
-                 show_message("商品限定只选择($sel_num)种,请重新选择."); 
+                 show_message_wx("商品限定只选择($sel_num)种,请重新选择.");
                  return 0;
              }
-             
+
               if ($card_sn != '0')
 
             {
 
                $sql = "SELECT * FROM " .$ecs->table('ks_cards').
                       " WHERE card_sn = '$card_sn'" .
-                      " AND card_pwd = '$card_pwd'"; 
+                      " AND card_pwd = '$card_pwd'";
 
                $record_arr = $db->getRow($sql);
 
              if (empty($record_arr))
 
              {
-                 show_message('卡号或密码错误'); 
+                 show_message_wx('卡号或密码错误');
                  return 0;
              }
-             else 
-             { 
-             	 $order_sn = get_order_sn();  
+             else
+             {
+             	 $order_sn = get_order_sn();
              	 $order_time = gmtime();
-             	  
+
              	 $GLOBALS['db']->query("INSERT INTO ".$GLOBALS['ecs']->table('ks_order')." (order_sn, card_id, order_goodcatid, order_user, order_address, order_tel, order_phone, order_bak, shipping_time, order_time, order_goods, order_status) VALUES('$order_sn','$card_id','$card_type','$order_user','$order_address','$order_tel','$order_phone','$order_bak','$shipping_time','$order_time','$goods',0)");
-             	 
+
              	 $sql = 'SELECT order_id FROM ' . $GLOBALS['ecs']->table('ks_order') . " WHERE order_time = '$order_time'";
                $order_id = $GLOBALS['db']->getOne($sql);
-               
+
                 $sql = "UPDATE " .$ecs->table('ks_cards'). " SET ".
                       "order_id         = '$order_id' ,".
                       "used_time         = '$order_time' ".
@@ -194,7 +194,7 @@ if ($action == 'update_kscard')
 
            $db->query($sql);
                $action = 'default';
-             	 show_message('已经成功提交订单!', '返回礼品卡管理', 'kscard.php','default');
+             	 show_message_wx('已经成功提交订单!', '返回礼品卡管理', 'kscard.php','default');
              }
            }
   echo 'asdfasdffffffffffffffffffffffffffffffffffffffff';
