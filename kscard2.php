@@ -68,7 +68,6 @@ if ($action == 'act_login') {
 	$card_sn    = isset($_REQUEST['card_sn'])? trim($_REQUEST['card_sn']): '0';
  
 	$card_pwd   = isset($_REQUEST['card_pwd'])? trim($_REQUEST['card_pwd']): '0';
-
         if ($card_sn != '0')
 
         {
@@ -240,6 +239,7 @@ function get_order_goods_list($id)
         $goods[$idx]['cg_goodid']         = $row['cg_goodid'];
         $goods[$idx]['cg_goodname']        = get_goods_name($row['cg_goodid']);
         $goods[$idx]['cg_goodbak']        = get_goods_bak($row['cg_goodid']);
+        $goods[$idx]['cg_goods_img']        = get_goods_img($row['cg_goodid']);
 
     }
 
@@ -259,19 +259,28 @@ function get_goods_name($id)
                
 }
 
-/* 获取配送商品备注 */
+/* 获取配送商品图片 */
 
-function get_goods_bak($id)
+function get_goods_img($id)
 
 {
-	$sql = "SELECT seller_note FROM " .$GLOBALS['ecs']->table('goods').
+	$sql = "SELECT goods_img FROM " .$GLOBALS['ecs']->table('goods').
                " WHERE goods_id = '$id'";
   $result = $GLOBALS['db']->getOne($sql);
   
   return $result;
                
 }
+function get_goods_bak($id)
 
+{
+    $sql = "SELECT seller_note FROM " .$GLOBALS['ecs']->table('goods').
+        " WHERE goods_id = '$id'";
+    $result = $GLOBALS['db']->getOne($sql);
+
+    return $result;
+
+}
 /* 获取可选商品数量 */
 
 function get_goods_num($id)
