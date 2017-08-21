@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,7 +17,10 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <link href="./css/kscard2.css" rel="stylesheet" type="text/css" />
+    <link href="./css/kscard2.css" rel="stylesheet" type="text/css"/>
+    <link href="themes\ecmoban_jindong2013\css\kscard2\Font-Awesome\css\font-awesome.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="./css/build.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="container-fluid">
@@ -37,7 +39,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <form class="form-horizontal" name="formLogin" action="kscard2.php" method="post">
+                <form class="form-horizontal" name="formLogin" action="kscard2.php" method="get">
                     <div class="form-group form-inline">
                         <label for="card_sn" class="col-sm-4 control-label">礼品卡序号</label>
                         <div class="col-sm-8">
@@ -68,106 +70,86 @@
     <div class=" col-sm-12  bg2">
         <div class="row header"><img src="./images/kscard2/577df21dc2ff8_01.png" alt=""/></div>
         <div class="row center-block"><p class="text-center">只可以选择{$sel_num}个商品</p></div>
-        <div class="row">
-            {foreach from=$goods_list item=goods}
-            <div class="list-group">
-                <a href="#" class="list-group-item">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <img src=" {$goods.cg_goods_img}" alt="...">
-                                <div class="col-md-8">
-                                    {$goods.cg_goodname}
-                                </div>
-                            </div>
-                        </div>
+        <form name="formLogin" action="kscard2.php" method="get">
+            <div class="row">
 
+                {foreach from=$goods_list item=goods}
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src=" {$goods.cg_goods_img}" alt="...">
+                                        <div class="col-sm-8">
+                                            {$goods.cg_goodname}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox checkbox-primary">
+                                                <input type="checkbox" id="checkbox{$goods.cg_goodid}" name="goods[]"
+                                                       value="{$goods.cg_goodid}">
+                                                <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
+                                                    点击选择商品
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
                     </div>
-                </a>
+                {/foreach}
+
             </div>
-            {/foreach}
-        </div>
-        <div class="container">
-            <div class="module">
-                <h1><span></span>礼品卡</h1>
-                <div class="content" style="padding:8px;">
-                    <form name="formLogin" action="kscard.php" method="post"
-                    ">
-                    <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
-                        <tr>
-                            <td width="40%" align="right">联系人</td>
-                            <td width="60%"><input style='font-size: 14px;' name="order_user" type="text" size="20"
-                                                   class="inputBg"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right">联系地址</td>
-                            <td>
-                                <input name="order_address" style='font-size: 14px;' type="text" size="20"
-                                       class="inputBg"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">固定电话</td>
-                            <td>
-                                <input name="order_tel" style='font-size: 14px;' type="text" size="20" class="inputBg"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">移动电话</td>
-                            <td>
-                                <input name="order_phone" style='font-size: 14px;' type="text" size="20"
-                                       class="inputBg"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">特殊要求</td>
-                            <td>
-                                <input name="order_bak" style='font-size: 14px;' type="text" size="20" class="inputBg"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">配送时间</td>
-                            <td>
-                                <input type="radio" name="shipping_time" value="全天" checked="checked"/>全天
-                                <input type="radio" name="shipping_time" value="上午"/>上午
-                                <input type="radio" name="shipping_time" value="下午"/>下午
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">选择商品<br/></td>
-                            <td>
-                                {foreach from=$goods_list item=goods}
-                                    <input name="goods[]" type="checkbox" value="{$goods.cg_goodid}"/>
-                                    <a href="/goods.php?id={$goods.cg_goodid}" target="_blank">{$goods.cg_goodname}</a>
-                                    {if $goods.cg_goodbak}
-                                        (说明:{$goods.cg_goodbak})
-                                    {/if}
-                                    <br/>
-                                    {foreachelse}
-                                    没有可选商品,请联系客服.
-                                {/foreach}
-                                <span style="color:red;">可选{$sel_num}件</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td align="left">
-                                <input type="hidden" name="act" value="{$act}"/>
-                                <input type="hidden" name="back_act" value="{$back_act}"/>
-                                <input type="hidden" name="card_sn" value="{$card_sn}"/>
-                                <input type="hidden" name="card_id" value="{$card_id}"/>
-                                <input type="hidden" name="card_pwd" value="{$card_pwd}"/>
-                                <input type="hidden" name="card_type" value="{$card_type}"/>
-                                <input type="hidden" name="sel_num" value="{$sel_num}"/>
-                                <input type="submit" name="submit" value=""
-                                       style="width:145px; height:40px; background:url(images/bnt_subOrder.gif) no-repeat 0 0; border:none; cursor:pointer;"/>
-                            </td>
-                        </tr>
-                    </table>
-                    </form>
+            <div class="row ">
+                <div class="col-sm-8 ">
+                    <div class="form-group">
+                        <label for="order_user">联系人</label>
+                        <input type="text" class="form-control" id="order_user" name="order_user" placeholder="联系人">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_address">联系地址</label>
+                        <input type="text" class="form-control" id="order_address" name="order_address" placeholder="联系地址">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_tel">固定电话</label>
+                        <input type="text" class="form-control" id="order_tel" name="order_tel" placeholder="固定电话">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_phone">移动电话</label>
+                        <input type="text" class="form-control" id="order_phone"  name="order_phone" placeholder="移动电话">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_bak">特殊要求</label>
+                        <input type="text" class="form-control" id="order_bak"  name="order_bak"  placeholder="特殊要求">
+                    </div>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="shipping_time" id="shipping_time_1" value="全天" checked="checked"> 全天
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="shipping_time" id="shipping_time_2" value="上午"> 上午
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="shipping_time" id="shipping_time_3" value="下午"> 下午
+                    </label>
+                    <input type="hidden" name="act" value="{$act}"/>
+                    <input type="hidden" name="back_act" value="{$back_act}"/>
+                    <input type="hidden" name="card_sn" value="{$card_sn}"/>
+                    <input type="hidden" name="card_id" value="{$card_id}"/>
+                    <input type="hidden" name="card_pwd" value="{$card_pwd}"/>
+                    <input type="hidden" name="card_type" value="{$card_type}"/>
+                    <input type="hidden" name="sel_num" value="{$sel_num}"/>
+                    <div class="row fr " >
+                        <div class="col-sm-8 ">
+                            <button type="submit" class="btn btn-primary btn-lg col-center-block">提交订单</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </form>
     </div>
 
     <!--{/if}-->

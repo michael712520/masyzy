@@ -16,6 +16,7 @@
 define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
+
 $action  = isset($_REQUEST['act']) ? trim($_REQUEST['act']) : 'default';
 
 // 不需要登录的操作或自己验证是否登录（如ajax处理）的act
@@ -48,14 +49,17 @@ if (empty($_SESSION['user_id']))
 /* 登陆礼品卡界面 */
 if ($action == 'default')
 {
+	
     assign_template();
     $smarty->assign('page_title', '用户礼品卡管理');    
     $smarty->assign('ur_here',    '礼品卡'); 
     $smarty->assign('helps',      get_shop_help());    
     $smarty->assign('act',    'act_login');    
     $smarty->assign('action',      $action);   
-    $smarty->assign('back_act',      $back_act);
+    $smarty->assign('back_act',      $back_act);        
+    
     $smarty->display('kscard2.dwt');
+    
 }
 
 /* 处理礼品卡登陆界面 */ 
@@ -65,6 +69,7 @@ if ($action == 'act_login') {
  
 	$card_pwd   = isset($_REQUEST['card_pwd'])? trim($_REQUEST['card_pwd']): '0';
         if ($card_sn != '0')
+
         {
 
                $sql = "SELECT * FROM " .$ecs->table('ks_cards').
