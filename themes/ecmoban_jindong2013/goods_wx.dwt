@@ -24,9 +24,12 @@
 </head>
 <body class="container-fluid">
 <div class="row">
-    <div class="view-content">
-        {$goods.goods_desc}
+    <div  class="col-sm-8">
+        <div class="view-content">
+            {$goods.goods_desc}
+        </div>
     </div>
+
 
 </div>
 </body>
