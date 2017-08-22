@@ -75,25 +75,28 @@
 
                 {foreach from=$goods_list item=goods}
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
+                        <a href="goods_wx.php?id={$goods.cg_goodid}" class="list-group-item">
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <img src=" {$goods.cg_goods_img}" alt="...">
-                                        <div class="col-sm-8">
-                                            {$goods.cg_goodname}
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="checkbox checkbox-primary">
-                                                <input type="checkbox" id="checkbox{$goods.cg_goodid}" name="goods[]"
-                                                       value="{$goods.cg_goodid}">
-                                                <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
-                                                    点击选择商品
-                                                </label>
-                                            </div>
 
+                                        <div class="thumbnail">
+                                            <img src=" {$goods.cg_goods_img}" alt="...">
+                                            <div class="col-sm-8">
+                                                {$goods.cg_goodname}
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="checkbox checkbox-primary">
+                                                    <input type="checkbox" id="checkbox{$goods.cg_goodid}"
+                                                           name="goods[]"
+                                                           value="{$goods.cg_goodid}">
+                                                    <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
+                                                        点击选择商品
+                                                    </label>
+                                                </div>
+
+                                            </div>
                                         </div>
-                                    </div>
+
                                 </div>
 
                             </div>
@@ -110,7 +113,8 @@
                     </div>
                     <div class="form-group">
                         <label for="order_address">联系地址</label>
-                        <input type="text" class="form-control" id="order_address" name="order_address" placeholder="联系地址">
+                        <input type="text" class="form-control" id="order_address" name="order_address"
+                               placeholder="联系地址">
                     </div>
                     <div class="form-group">
                         <label for="order_tel">固定电话</label>
@@ -118,11 +122,11 @@
                     </div>
                     <div class="form-group">
                         <label for="order_phone">移动电话</label>
-                        <input type="text" class="form-control" id="order_phone"  name="order_phone" placeholder="移动电话">
+                        <input type="text" class="form-control" id="order_phone" name="order_phone" placeholder="移动电话">
                     </div>
                     <div class="form-group">
                         <label for="order_bak">特殊要求</label>
-                        <input type="text" class="form-control" id="order_bak"  name="order_bak"  placeholder="特殊要求">
+                        <input type="text" class="form-control" id="order_bak" name="order_bak" placeholder="特殊要求">
                     </div>
 
                     <label class="radio-inline">
@@ -141,7 +145,7 @@
                     <input type="hidden" name="card_pwd" value="{$card_pwd}"/>
                     <input type="hidden" name="card_type" value="{$card_type}"/>
                     <input type="hidden" name="sel_num" value="{$sel_num}"/>
-                    <div class="row fr " >
+                    <div class="row fr ">
                         <div class="col-sm-8 ">
                             <button type="submit" class="btn btn-primary btn-lg col-center-block">提交订单</button>
                         </div>
