@@ -208,6 +208,12 @@
                                    value="{$order.order_bak}" size='20'/></td>
                     </tr>
                     <tr>
+                        <td align="right">配送订单</td>
+                        <td>
+                            <input disabled="true" 　readOnly="true" type='text' name='order_kd' maxlength="30"
+                                   value="{$order.order_kd}" size='20'/></td>
+                    </tr>
+                    <tr>
                         <td align="right">配送时间</td>
                         <td>
                             <input disabled="true" 　readOnly="true" type='text' name='shipping_time' maxlength="30"
