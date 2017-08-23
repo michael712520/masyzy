@@ -96,6 +96,16 @@ if ($action == 'act_login') {
                 $smarty->assign('card_type',    $record_arr['card_type']);
                 $smarty->assign('goods_list',    get_order_goods_list($record_arr['card_type']));
                 $smarty->assign('sel_num',    get_goods_num($record_arr['card_type']));
+                $card_type= $record_arr['card_type'];
+                $list = $db->getRow("SELECT * FROM " .$ecs->table('ks_cardcats'). " WHERE cat_id = '$card_type'");
+                if($list['cat_bj']==null||empty($list['cat_bj'])){
+                    $cat_bj="./images/kscard2/577df21dc2ff8_01.png";
+                }else{
+                    $cat_bj=$list['cat_bj'];
+                }
+
+
+                      $smarty->assign('cat_bj',$list['cat_bj']);
                 $smarty->display('kscard2.dwt');
                 }
                 else

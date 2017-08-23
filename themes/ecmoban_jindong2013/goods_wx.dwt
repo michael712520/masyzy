@@ -21,11 +21,49 @@
     <link href="themes\ecmoban_jindong2013\css\kscard2\Font-Awesome\css\font-awesome.min.css" rel="stylesheet"
           type="text/css"/>
     <link href="./css/build.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .ff {
+            background-color: #cd413d;
+            font-size: 20px;
+            margin-top: 0px;
+            color: #FFF
+        }
+
+        /*b22bec*/
+        .header {
+            height: 1rem;
+            background: #ccc;
+            font-size: 0.2rem;
+            text-align: center;
+            padding-top: 0rem
+
+        }
+
+        a {
+            color: #e8e8e8;
+
+        }
+
+        .bg2{
+            background-color: #fcecd2;
+        }
+    </style>
 </head>
+
 <body class="container-fluid">
+
+
 <div class="row">
-    <div  class="col-sm-8">
-        <div class="view-content">
+    <div class="col-sm-8">
+        <ul class="nav navbar-nav ff">
+            <li class="active"><a href="javascript:history.back(-1)">返回</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="row bg2">
+    <div class="col-sm-12">
+        <div class="view-content header">
             {$goods.goods_desc}
         </div>
     </div>

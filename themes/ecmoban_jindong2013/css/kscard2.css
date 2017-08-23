@@ -67,9 +67,25 @@
     margin-left: auto;
     margin-right: auto;
 }
-.vf{
+
+.vf {
     margin-left: 100px;
 }
-.pb{
+
+.pb {
     height: 100%;
+}
+
+.navbar-fh {
+    background-color: #cd413d;
+    font-size: 20px;
+    margin: 0px;
+    color: #FFF
+}
+
+.navbar-fh a {
+    color: #e8e8e8;
+}
+td{
+    padding: 0.3rem;
 }

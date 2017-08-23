@@ -68,7 +68,7 @@
 
     <!--{if $action eq 'act_login'}-->
     <div class=" col-sm-12  bg2">
-        <div class="row header"><img src="./images/kscard2/577df21dc2ff8_01.png" alt=""/></div>
+        <div class="row header"><img src="{$cat_bj}" alt=""/></div>
         <div class="row center-block"><p class="text-center">只可以选择{$sel_num}个商品</p></div>
         <form name="formLogin" action="kscard2.php" method="get">
             <div class="row">
@@ -79,23 +79,23 @@
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
 
-                                        <div class="thumbnail">
-                                            <img src=" {$goods.cg_goods_img}" alt="...">
-                                            <div class="col-sm-8">
-                                                {$goods.cg_goodname}
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="checkbox checkbox-primary">
-                                                    <input type="checkbox" id="checkbox{$goods.cg_goodid}"
-                                                           name="goods[]"
-                                                           value="{$goods.cg_goodid}">
-                                                    <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
-                                                        点击选择商品
-                                                    </label>
-                                                </div>
-
-                                            </div>
+                                    <div class="thumbnail">
+                                        <img src=" {$goods.cg_goods_img}" alt="...">
+                                        <div class="col-sm-8">
+                                            {$goods.cg_goodname}
                                         </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox checkbox-primary">
+                                                <input type="checkbox" id="checkbox{$goods.cg_goodid}"
+                                                       name="goods[]"
+                                                       value="{$goods.cg_goodid}">
+                                                <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
+                                                    点击选择商品
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
 
                                 </div>
 
@@ -159,9 +159,16 @@
     <!--{/if}-->
 
     <!--{if $action eq 'order_info'}-->
+    <div class="row">
+        <div class="col-sm-8">
+            <ul class="nav navbar-nav navbar-fh">
+                <li class="active"><a href="javascript:history.back(-1)">已提交的订单</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="module">
-            <h1><span></span>已提交的订单</h1>
+
             <div class="content" style="padding:8px;">
                 <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
                     <tr>
