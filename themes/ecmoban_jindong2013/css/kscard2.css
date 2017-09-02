@@ -54,7 +54,7 @@
 
 .header img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .fr {
@@ -88,4 +88,28 @@
 }
 td{
     padding: 0.3rem;
+}
+.thumbnail{
+
+    height: 160px;;
+}
+
+.thumbnail>img {
+
+    width: 140px;
+    height: 140px;;
+
+    position: relative;
+    float: left;
+    margin: 0;
+}
+.thumbnail>div{
+    margin-left: 130px;
+    position: relative;
+    margin-top: 40px;
+
+}
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0px;
 }

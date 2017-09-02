@@ -81,10 +81,8 @@
 
                                     <div class="thumbnail">
                                         <img src=" {$goods.cg_goods_img}" alt="...">
-                                        <div class="col-sm-8">
-                                            {$goods.cg_goodname}
-                                        </div>
-                                        <div class="col-sm-4">
+
+                                        <div class="col-sm-4 ">
                                             <div class="checkbox checkbox-primary">
                                                 <input type="checkbox" id="checkbox{$goods.cg_goodid}"
                                                        name="goods[]"
@@ -96,7 +94,9 @@
 
                                         </div>
                                     </div>
-
+                                    <div class="col-sm-8">
+                                        {$goods.cg_goodname}
+                                    </div>
                                 </div>
 
                             </div>
