@@ -96,15 +96,15 @@ td{
 
 .thumbnail>img {
 
-    width: 140px;
-    height: 140px;;
+    width: 150px;
+    height: 150px;;
 
     position: relative;
     float: left;
     margin: 0;
 }
 .thumbnail>div{
-    margin-left: 130px;
+    margin-left: 140px;
     position: relative;
     margin-top: 40px;
 
@@ -112,4 +112,7 @@ td{
 .list-group {
     padding-left: 0;
     margin-bottom: 0px;
+}
+.cm-vf{
+    padding-right:1px;
 }

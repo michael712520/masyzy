@@ -77,12 +77,12 @@
                     <div class="list-group">
                         <a href="goods_wx.php?id={$goods.cg_goodid}" class="list-group-item">
                             <div class="row">
-                                <div class="col-sm-6 col-md-4">
+                                <div class="col-sm-6 col-md-4 ">
 
                                     <div class="thumbnail">
                                         <img src=" {$goods.cg_goods_img}" alt="...">
 
-                                        <div class="col-sm-4 ">
+                                        <div class="col-sm-4 cm-vf">
                                             <div class="checkbox checkbox-primary">
                                                 <input type="checkbox" id="checkbox{$goods.cg_goodid}"
                                                        name="goods[]"
