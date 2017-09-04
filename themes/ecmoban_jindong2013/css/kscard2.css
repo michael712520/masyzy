@@ -86,37 +86,55 @@
 .navbar-fh a {
     color: #e8e8e8;
 }
-td{
+
+td {
     padding: 0.3rem;
 }
-.thumbnail{
 
-    height: 220px;;
+.thumbnail {
+
+    height: 240px;;
 }
 
-.thumbnail>img {
+.thumbnail > img {
 
-    width: 200px;
-    height: 200px;;
+    width: 220px;
+    height: 220px;;
 
     position: relative;
     float: left;
     margin: 0;
 }
-.thumbnail>div{
-    margin-left: 200px;
+
+.thumbnail > div {
+    float: right;
     position: relative;
-    margin-top: 80px;
+    margin-top: 90px;
 
 }
+
 .list-group {
     padding-left: 0;
     margin-bottom: 0px;
 }
-.cm-vf{
-    padding-right:1px;
+
+.cm-vf {
+    padding-right: 1px;
 }
-.row-1{
+
+.row-1 {
     padding-right: 5px;
     padding-left: 5px
+}
+
+.checkbox-dc:before {
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+.checkbox label::before {
+    margin-left: 30px;
+}
+.checkbox {
+    padding-left: 0px;
 }

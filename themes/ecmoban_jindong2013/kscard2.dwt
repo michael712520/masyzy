@@ -17,10 +17,11 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <link href="./css/kscard2.css" rel="stylesheet" type="text/css"/>
+
     <link href="themes\ecmoban_jindong2013\css\kscard2\Font-Awesome\css\font-awesome.min.css" rel="stylesheet"
           type="text/css"/>
     <link href="./css/build.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/kscard2.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="container-fluid">
@@ -87,7 +88,7 @@
                                                 <input type="checkbox" id="checkbox{$goods.cg_goodid}"
                                                        name="goods[]"
                                                        value="{$goods.cg_goodid}">
-                                                <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
+                                                <label for="checkbox{$goods.cg_goodid}" class="btn btn-info checkbox-dc">
                                                     选择兑换
                                                 </label>
                                             </div>
