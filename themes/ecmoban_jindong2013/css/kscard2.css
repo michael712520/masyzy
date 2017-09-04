@@ -91,22 +91,22 @@ td{
 }
 .thumbnail{
 
-    height: 160px;;
+    height: 220px;;
 }
 
 .thumbnail>img {
 
-    width: 150px;
-    height: 150px;;
+    width: 200px;
+    height: 200px;;
 
     position: relative;
     float: left;
     margin: 0;
 }
 .thumbnail>div{
-    margin-left: 140px;
+    margin-left: 200px;
     position: relative;
-    margin-top: 40px;
+    margin-top: 80px;
 
 }
 .list-group {
@@ -115,4 +115,8 @@ td{
 }
 .cm-vf{
     padding-right:1px;
+}
+.row-1{
+    padding-right: 5px;
+    padding-left: 5px
 }

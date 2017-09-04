@@ -71,28 +71,28 @@
         <div class="row header"><img src="{$cat_bj}" alt=""/></div>
         <div class="row center-block"><p class="text-center">只可以选择{$sel_num}个商品</p></div>
         <form name="formLogin" action="kscard2.php" method="get">
-            <div class="row">
+            <div class="row ">
 
                 {foreach from=$goods_list item=goods}
                     <div class="list-group">
                         <a href="goods_wx.php?id={$goods.cg_goodid}" class="list-group-item">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-4 ">
+                            <div class="row ">
+                                <div class="col-sm-6 col-md-4 row-1">
 
                                     <div class="thumbnail">
                                         <img src=" {$goods.cg_goods_img}" alt="...">
 
-                                        <div class="col-sm-4 cm-vf">
+
                                             <div class="checkbox checkbox-primary">
                                                 <input type="checkbox" id="checkbox{$goods.cg_goodid}"
                                                        name="goods[]"
                                                        value="{$goods.cg_goodid}">
                                                 <label for="checkbox{$goods.cg_goodid}" class="btn btn-info">
-                                                    点击选择商品
+                                                    选择兑换
                                                 </label>
                                             </div>
 
-                                        </div>
+
                                     </div>
                                     <div class="col-sm-8">
                                         {$goods.cg_goodname}
