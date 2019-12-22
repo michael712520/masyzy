@@ -119,9 +119,9 @@ $_LANG['user_bonus_info'] = '共计 %d 个,价值 %s';
 $_LANG['not_bonus'] = '没有储值卡';
 $_LANG['add_user_bonus'] = '添加一个储值卡';
 $_LANG['bonus_number'] = '储值卡序列号';
-$_LANG['old_password'] = '原密码';
-$_LANG['new_password'] = '新密码';
-$_LANG['confirm_password'] = '确认密码';
+$_LANG['old_password'] = '原';
+$_LANG['new_password'] = '新';
+$_LANG['confirm_password'] = '确认';
 
 $_LANG['bonus_sn_exist'] = "此储值卡号码已经被占用了！";
 $_LANG['bonus_sn_not_exist'] = "此储值卡号码不存在！";
@@ -133,7 +133,7 @@ $_LANG['profile_lnk'] = '查看我的个人资料';
 $_LANG['edit_email_failed'] = "编辑电子邮件地址失败！";
 $_LANG['edit_profile_success'] = "您的个人资料已经成功修改！";
 $_LANG['edit_profile_failed'] = "修改个人资料操作失败！";
-$_LANG['oldpassword_error'] = "您输入的旧密码有误!请确认再后输入！";
+$_LANG['oldpassword_error'] = "您输入的旧有误!请确认再后输入！";
 
 //JS语言项
 $_LANG['profile_js']['bonus_sn_empty'] = "请输入您要添加的储值卡号码！";
@@ -141,10 +141,10 @@ $_LANG['profile_js']['bonus_sn_error'] = "您输入的储值卡号码格式不�
 
 $_LANG['profile_js']['email_empty'] = "请输入您的电子邮件地址！";
 $_LANG['profile_js']['email_error'] = "您输入的电子邮件地址格式不正确！";
-$_LANG['profile_js']['old_password_empty'] = "请输入您的原密码！";
-$_LANG['profile_js']['new_password_empty'] = "请输入您的新密码！";
-$_LANG['profile_js']['confirm_password_empty'] = "请输入您的确认密码！";
-$_LANG['profile_js']['both_password_error'] = "您现两次输入的密码不一致！";
+$_LANG['profile_js']['old_password_empty'] = "请输入您的原！";
+$_LANG['profile_js']['new_password_empty'] = "请输入您的新！";
+$_LANG['profile_js']['confirm_password_empty'] = "请输入您的确认！";
+$_LANG['profile_js']['both_password_error'] = "您现两次输入的不一致！";
 
 /* 支付方式 */
 $_LANG['pay_name'] = '名称';
@@ -184,23 +184,23 @@ $_LANG['confirm_edit'] = '确认修改';
 
 $_LANG['confirm_drop_address'] = '你确认要删除该收货地址吗？';
 
-/* 会员密码找回 */
+/* 会员找回 */
 $_LANG['username_and_email'] = '请输入您注册的用户名和注册时填写的电子邮件地址。';
-$_LANG['enter_new_password'] = '请输入您的新密码';
+$_LANG['enter_new_password'] = '请输入您的新';
 $_LANG['username_no_email'] = "您填写的用户名与电子邮件地址不匹配，请重新输入！";
 $_LANG['fail_send_password'] = "发送邮件出错，请与管理员联系！";
-$_LANG['send_success'] = '重置密码的邮件已经发到您的邮箱：';
+$_LANG['send_success'] = '重置的邮件已经发到您的邮箱：';
 $_LANG['parm_error'] = "参数错误，请返回！";
-$_LANG['edit_password_failure'] = "您输入的原密码不正确！";
-$_LANG['edit_password_success'] = "您的新密码已设置成功！";
+$_LANG['edit_password_failure'] = "您输入的原不正确！";
+$_LANG['edit_password_success'] = "您的新已设置成功！";
 $_LANG['username_not_match_email'] = "用户名与电子邮件地址不匹配，请重新输入！";
 //JS语言项
 $_LANG['password_js']['user_name_empty'] = "请输入您的用户名！";
 $_LANG['password_js']['email_address_empty'] = "请输入您的电子邮件地址！";
 $_LANG['password_js']['email_address_error'] = "您输入的电子邮件地址格式不正确！";
-$_LANG['password_js']['new_password_empty'] = "请输入您的新密码！";
-$_LANG['password_js']['confirm_password_empty'] = "请输入您的确认密码！";
-$_LANG['password_js']['both_password_error'] = "您两次输入的密码不一致！";
+$_LANG['password_js']['new_password_empty'] = "请输入您的新！";
+$_LANG['password_js']['confirm_password_empty'] = "请输入您的确认！";
+$_LANG['password_js']['both_password_error'] = "您两次输入的不一致！";
 
 /* 会员留言 */
 $_LANG['message_title'] = '主题';
@@ -361,16 +361,16 @@ $_LANG['order_amount'] = '应付款金额';
 $_LANG['update_address'] = '更新收货人信息';
 $_LANG['virtual_card_info'] = '虚拟卡信息';
 
-/* 取回密码 */
+/* 取回 */
 $_LANG['back_home_lnk'] = '返回首页';
-$_LANG['get_password_lnk'] = '返回获取密码页面';
+$_LANG['get_password_lnk'] = '返回获取页面';
 
 /* 登录 注册 */
 $_LANG['label_username'] = '用户名';
 $_LANG['label_email'] = 'email';
-$_LANG['label_password'] = '密码';
-$_LANG['label_confirm_password'] = '确认密码';
-$_LANG['label_password_intensity'] = '密码强度';
+$_LANG['label_password'] = '';
+$_LANG['label_confirm_password'] = '确认';
+$_LANG['label_password_intensity'] = '强度';
 $_LANG['want_login'] = '我已有账号，我要登录';
 $_LANG['other_msn'] = 'MSN';
 $_LANG['other_qq'] = 'QQ';
@@ -390,7 +390,7 @@ $_LANG['msg_email_format'] = '邮件地址不合法';
 $_LANG['login_success'] = '登录成功';
 $_LANG['confirm_login'] = '确认登录';
 $_LANG['profile_lnk'] = '查看我的个人信息';
-$_LANG['login_failure'] = '用户名或密码错误';
+$_LANG['login_failure'] = '用户名或错误';
 $_LANG['relogin_lnk'] = '重新登录';
 
 $_LANG['sex'] = '性　别';
@@ -464,9 +464,9 @@ $_LANG['confirm_drop_tag'] = '您确认要删除此标签吗？';
 $_LANG['passport_js']['username_empty'] = '- 用户名不能为空。';
 $_LANG['passport_js']['username_shorter'] = '- 用户名长度不能少于 3 个字符。';
 $_LANG['passport_js']['username_invalid'] = '- 用户名只能是由字母数字以及下划线组成。';
-$_LANG['passport_js']['password_empty'] = '- 登录密码不能为空。';
-$_LANG['passport_js']['password_shorter'] = '- 登录密码不能少于 6 个字符。';
-$_LANG['passport_js']['confirm_password_invalid'] = '- 两次输入密码不一致';
+$_LANG['passport_js']['password_empty'] = '- 登录不能为空。';
+$_LANG['passport_js']['password_shorter'] = '- 登录不能少于 6 个字符。';
+$_LANG['passport_js']['confirm_password_invalid'] = '- 两次输入不一致';
 $_LANG['passport_js']['email_empty'] = '- Email 为空';
 $_LANG['passport_js']['email_invalid'] = '- Email 不是合法的地址';
 $_LANG['passport_js']['agreement'] = '- 您没有接受协议';
@@ -631,7 +631,7 @@ $_LANG['exchange_error_1'] = 'UCenter提交积分兑换时发生错误';
 $_LANG['rank_points'] = '商城等级积分';
 $_LANG['pay_points'] = '商城消费积分';
 
-/* 密码强度 */
+/* 强度 */
 $_LANG['pwd_lower'] = '弱';
 $_LANG['pwd_middle'] = '中';
 $_LANG['pwd_high'] = '强';

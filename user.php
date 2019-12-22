@@ -134,7 +134,7 @@ if ($action == 'register')
         $smarty->assign('rand',            mt_rand());
     }
 
-    /* 密码提示问题 */
+    /* 提示问题 */
     $smarty->assign('passwd_questions', $_LANG['passwd_questions']);
 
     /* 增加是否关闭注册 */
@@ -232,7 +232,7 @@ elseif ($action == 'act_register')
                 $db->query($sql);
             }
 
-            /* 写入密码提示问题和答案 */
+            /* 写入提示问题和答案 */
             if (!empty($passwd_answer) && !empty($sel_question))
             {
                 $sql = 'UPDATE ' . $ecs->table('users') . " SET `passwd_question`='$sel_question', `passwd_answer`='$passwd_answer'  WHERE `user_id`='" . $_SESSION['user_id'] . "'";
@@ -482,7 +482,7 @@ elseif ($action == 'profile')
 
     $smarty->assign('extend_info_list', $extend_info_list);
 
-    /* 密码提示问题 */
+    /* 提示问题 */
     $smarty->assign('passwd_questions', $_LANG['passwd_questions']);
 
     $smarty->assign('profile', $user_info);
@@ -528,7 +528,7 @@ elseif ($action == 'act_edit_profile')
         }
     }
 
-    /* 写入密码提示问题和答案 */
+    /* 写入提示问题和答案 */
     if (!empty($passwd_answer) && !empty($sel_question))
     {
         $sql = 'UPDATE ' . $ecs->table('users') . " SET `passwd_question`='$sel_question', `passwd_answer`='$passwd_answer'  WHERE `user_id`='" . $_SESSION['user_id'] . "'";
@@ -588,7 +588,7 @@ elseif ($action == 'act_edit_profile')
     }
 }
 
-/* 密码找回-->修改密码界面 */
+/* 找回-->修改界面 */
 elseif ($action == 'get_password')
 {
     include_once(ROOT_PATH . 'includes/lib_passport.php');
@@ -617,14 +617,14 @@ elseif ($action == 'get_password')
     }
 }
 
-/* 密码找回-->输入用户名界面 */
+/* 找回-->输入用户名界面 */
 elseif ($action == 'qpassword_name')
 {
-    //显示输入要找回密码的账号表单
+    //显示输入要找回的账号表单
     $smarty->display('user_passport.dwt');
 }
 
-/* 密码找回-->根据注册用户名取得密码提示问题界面 */
+/* 找回-->根据注册用户名取得提示问题界面 */
 elseif ($action == 'get_passwd_question')
 {
     if (empty($_POST['user_name']))
@@ -636,11 +636,11 @@ elseif ($action == 'get_passwd_question')
         $user_name = trim($_POST['user_name']);
     }
 
-    //取出会员密码问题和答案
+    //取出会员问题和答案
     $sql = 'SELECT user_id, user_name, passwd_question, passwd_answer FROM ' . $ecs->table('users') . " WHERE user_name = '" . $user_name . "'";
     $user_question_arr = $db->getRow($sql);
 
-    //如果没有设置密码问题，给出错误提示
+    //如果没有设置问题，给出错误提示
     if (empty($user_question_arr['passwd_answer']))
     {
         show_message($_LANG['no_passwd_question'], $_LANG['back_home_lnk'], './', 'info');
@@ -648,7 +648,7 @@ elseif ($action == 'get_passwd_question')
 
     $_SESSION['temp_user'] = $user_question_arr['user_id'];  //设置临时用户，不具有有效身份
     $_SESSION['temp_user_name'] = $user_question_arr['user_name'];  //设置临时用户，不具有有效身份
-    $_SESSION['passwd_answer'] = $user_question_arr['passwd_answer'];   //存储密码问题答案，减少一次数据库访问
+    $_SESSION['passwd_answer'] = $user_question_arr['passwd_answer'];   //存储问题答案，减少一次数据库访问
 
     $captcha = intval($_CFG['captcha']);
     if (($captcha & CAPTCHA_LOGIN) && (!($captcha & CAPTCHA_LOGIN_FAIL) || (($captcha & CAPTCHA_LOGIN_FAIL) && $_SESSION['login_fail'] > 2)) && gd_version() > 0)
@@ -661,7 +661,7 @@ elseif ($action == 'get_passwd_question')
     $smarty->display('user_passport.dwt');
 }
 
-/* 密码找回-->根据提交的密码答案进行相应处理 */
+/* 找回-->根据提交的答案进行相应处理 */
 elseif ($action == 'check_answer')
 {
     $captcha = intval($_CFG['captcha']);
@@ -699,7 +699,7 @@ elseif ($action == 'check_answer')
     }
 }
 
-/* 发送密码修改确认邮件 */
+/* 发送修改确认邮件 */
 elseif ($action == 'send_pwd_email')
 {
     include_once(ROOT_PATH . 'includes/lib_passport.php');
@@ -735,14 +735,14 @@ elseif ($action == 'send_pwd_email')
     }
 }
 
-/* 重置新密码 */
+/* 重置新 */
 elseif ($action == 'reset_password')
 {
-    //显示重置密码的表单
+    //显示重置的表单
     $smarty->display('user_passport.dwt');
 }
 
-/* 修改会员密码 */
+/* 修改会员 */
 elseif ($action == 'act_edit_password')
 {
     include_once(ROOT_PATH . 'includes/lib_passport.php');

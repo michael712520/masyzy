@@ -284,7 +284,7 @@ class discuz55 extends integrate
      *
      * @access      public
      * @param       string      username    用户名
-     * @param       string      password    登录密码
+     * @param       string      password    登录
      * @param       string      email       邮件地址
      * @param       string      bday        生日
      * @param       string      gender      性别

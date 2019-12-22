@@ -29,7 +29,7 @@ $_LANG['js_languages']['todolist_clear'] = '清除';
 $_LANG['js_languages']['todolist_confirm_save'] = '是否将更改保存到记事本？';
 $_LANG['js_languages']['todolist_confirm_clear'] = '是否清空内容？';
 $_LANG['auto_redirection'] = '如果您不做出选择，将在 <span id="spanSeconds">3</span> 秒后跳转到第一个链接地址。';
-$_LANG['password_rule'] = '密码应只包含英文字符、数字.长度在6--16位之间';
+$_LANG['password_rule'] = '应只包含英文字符、数字.长度在6--16位之间';
 $_LANG['username_rule'] = '用户名应为汉字、英文字符、数字组合，3到15位';
 $_LANG['plugins_not_found'] = '插件 %s 无法定位';
 $_LANG['no_records'] = '没有找到任何记录';
@@ -320,7 +320,7 @@ $_LANG['file_unavailable'] = '文件 %s 不存在或不可读';
 /* 邮件发送错误信息 */
 $_LANG['smtp_setting_error'] = '邮件服务器设置信息不完整';
 $_LANG['smtp_connect_failure'] = '无法连接到邮件服务器 %s';
-$_LANG['smtp_login_failure'] = '邮件服务器验证帐号或密码不正确';
+$_LANG['smtp_login_failure'] = '邮件服务器验证帐号或不正确';
 $_LANG['sendemail_false'] = '邮件发送失败，请检查您的邮件服务器设置！';
 $_LANG['smtp_refuse'] = '服务器拒绝发送该邮件';
 $_LANG['disabled_fsockopen'] = '服务器已禁用 fsocketopen 函数。';

@@ -20,7 +20,7 @@ $_LANG['paypal_ec_desc']                  = 'PayPal（www.paypal.com） 是在�
         'PayPal 可在 56 个市场以 7 种货币（加元、欧元、英镑、美元、日元、澳元、港元）使用。' .
         '<br/><a href="http://cloud.ecshop.com/payment_apply.php?mod=paypal" target="_blank">立即在线申请</a>';
 $_LANG['paypal_ec_username']               = '用户名：';
-$_LANG['paypal_ec_password']               = '密码：';
+$_LANG['paypal_ec_password']               = '：';
 $_LANG['paypal_ec_signature']               = '签名：';
 $_LANG['paypal_ec_currency']              = '支付货币';
 $_LANG['paypal_ec_currency_range']['AUD'] = '澳元';

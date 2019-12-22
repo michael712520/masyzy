@@ -82,7 +82,7 @@ if ($action == 'act_login') {
              if (empty($record_arr))
 
              {
-                 show_message('卡号或密码错误'); 
+                 show_message('卡号或错误'); 
                  return 0;
              }
              else 
@@ -140,7 +140,7 @@ if ($action == 'next_ktcard')
              if (empty($record_arr))
 
              {
-                 show_message('卡号或密码错误'); 
+                 show_message('卡号或错误'); 
                  return 0;
              }
             if (empty($arr))
@@ -218,7 +218,7 @@ if ($action == 'update_ktcard')
              if (empty($record_arr))
 
              {
-                 show_message('卡号或密码错误'); 
+                 show_message('卡号或错误'); 
                  return 0;
              }
              else 

@@ -29,7 +29,7 @@ class integrate
     /* 整合对象使用的数据库用户名 */
     var $db_user        = '';
 
-    /* 整合对象使用的数据库密码 */
+    /* 整合对象使用的数据库 */
     var $db_pass        = '';
 
     /* 整合对象数据表前缀 */
@@ -53,7 +53,7 @@ class integrate
     /* 会员名称的字段名 */
     var $field_name     = '';
 
-    /* 会员密码的字段名 */
+    /* 会员的字段名 */
     var $field_pass     = '';
 
     /* 会员邮箱的字段名 */
@@ -90,7 +90,7 @@ class integrate
      * @param       string  $db_host    数据库主机
      * @param       string  $db_name    数据库名
      * @param       string  $db_user    数据库用户名
-     * @param       string  $db_pass    数据库密码
+     * @param       string  $db_pass    数据库
      * @return      void
      */
     function integrate($cfg)
@@ -484,7 +484,7 @@ class integrate
     }
 
     /**
-     *  检查指定用户是否存在及密码是否正确
+     *  检查指定用户是否存在及是否正确
      *
      * @access  public
      * @param   string  $username   用户名
@@ -496,7 +496,7 @@ class integrate
 
         $post_username = $username;
 
-        /* 如果没有定义密码则只检查用户名 */
+        /* 如果没有定义则只检查用户名 */
         if ($password === null)
         {
             $sql = "SELECT " . $this->field_id .
@@ -631,7 +631,7 @@ class integrate
     }
 
     /**
-     *  编译密码函数
+     *  编译函数
      *
      * @access  public
      * @param   array   $cfg 包含参数为 $password, $md5password, $salt, $type

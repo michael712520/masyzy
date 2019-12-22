@@ -17,14 +17,14 @@ $_LANG['register_sms'] = '注册或启用短信账号';
 
 /* 注册和启用短信功能 */
 $_LANG['email'] = '电子邮箱';
-$_LANG['password'] = '登录密码';
+$_LANG['password'] = '登录';
 $_LANG['domain'] = '网店域名';
 $_LANG['register_new'] = '注册新账号';
 $_LANG['enable_old'] = '启用已有账号';
 
 /* 短信特服信息 */
 $_LANG['sms_user_name'] = '用户名：';
-$_LANG['sms_password'] = '密码：';
+$_LANG['sms_password'] = '：';
 $_LANG['sms_domain'] = '域名：';
 $_LANG['sms_num'] = '短信特服号：';
 $_LANG['sms_count'] = '发送短信条数：';
@@ -93,10 +93,10 @@ $_LANG['api_errors']['register'][3] = '用户名已存在。';
 $_LANG['api_errors']['register'][4] = '未知错误。';
 $_LANG['api_errors']['register'][5] = '接口错误。';
 //--获取余额
-$_LANG['api_errors']['get_balance'][1] = '用户名密码不正确。';
+$_LANG['api_errors']['get_balance'][1] = '用户名不正确。';
 $_LANG['api_errors']['get_balance'][2] = '用户被禁用。';
 //--发送短信
-$_LANG['api_errors']['send'][1] = '用户名密码不正确。';
+$_LANG['api_errors']['send'][1] = '用户名不正确。';
 $_LANG['api_errors']['send'][2] = '短信内容过长。';
 $_LANG['api_errors']['send'][3] = '发送日期应大于当前时间。';
 $_LANG['api_errors']['send'][4] = '错误的号码。';
@@ -104,10 +104,10 @@ $_LANG['api_errors']['send'][5] = '账户余额不足。';
 $_LANG['api_errors']['send'][6] = '账户已被停用。';
 $_LANG['api_errors']['send'][7] = '接口错误。';
 //--历史记录
-$_LANG['api_errors']['get_history'][1] = '用户名密码不正确。';
+$_LANG['api_errors']['get_history'][1] = '用户名不正确。';
 $_LANG['api_errors']['get_history'][2] = '查无记录。';
 //--用户验证
-$_LANG['api_errors']['auth'][1] = '密码错误。';
+$_LANG['api_errors']['auth'][1] = '错误。';
 $_LANG['api_errors']['auth'][2] = '用户不存在。';
 
 /* 用户服务器检测到的错误信息 */
@@ -124,7 +124,7 @@ $_LANG['server_errors'][10] = '存储失败。';//ERROR_CANT_STORE
 
 /* 客户端JS语言项 */
 //--注册或启用
-$_LANG['js_languages']['password_empty_error'] = '密码不能为空。';
+$_LANG['js_languages']['password_empty_error'] = '不能为空。';
 $_LANG['js_languages']['username_empty_error'] = '用户名不能为空。';
 $_LANG['js_languages']['username_format_error'] = '用户名格式不对。';
 $_LANG['js_languages']['domain_empty_error'] = '域名不能为空。';

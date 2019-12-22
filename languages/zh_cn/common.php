@@ -14,7 +14,7 @@
 */
 
 /* 用户登录语言项 */
-$_LANG['empty_username_password'] = '对不起，您必须完整填写用户名和密码。';
+$_LANG['empty_username_password'] = '对不起，您必须完整填写用户名和。';
 $_LANG['shot_message'] = "短消息";
 
 /* 公共语言项 */
@@ -475,10 +475,10 @@ $_LANG['eg_error_number'] = '对不起，该商品库存不足，现在不能兑
 
 /* 会员登录注册 */
 $_LANG['member_name'] = '会员';
-$_LANG['password'] = '密码';
-$_LANG['confirm_password'] = '确认密码';
+$_LANG['password'] = '';
+$_LANG['confirm_password'] = '确认';
 $_LANG['sign_up'] = '注册新会员';
-$_LANG['forgot_password'] = '您忘记密码了吗？';
+$_LANG['forgot_password'] = '您忘记了吗？';
 $_LANG['hello'] = '您好';
 $_LANG['welcome_return'] = '欢迎您回来';
 $_LANG['now_account'] = '您的账户中现在有';
@@ -520,7 +520,7 @@ $_LANG['file_unavailable'] = '文件 %s 不存在或不可读';
 /* 邮件发送错误信息 */
 $_LANG['smtp_setting_error'] = '邮件服务器设置信息不完整';
 $_LANG['smtp_connect_failure'] = '无法连接到邮件服务器 %s';
-$_LANG['smtp_login_failure'] = '邮件服务器验证帐号或密码不正确';
+$_LANG['smtp_login_failure'] = '邮件服务器验证帐号或不正确';
 $_LANG['smtp_refuse'] = '服务器拒绝发送该邮件';
 $_LANG['sendemail_false'] = "邮件发送失败，请与网站管理员联系！";
 $_LANG['disabled_fsockopen'] = 'fsockopen函数被禁用';
@@ -554,7 +554,7 @@ $_LANG['p_y']['link_end'] = '</span></strong></a>&nbsp;';
 
 /* 虚拟卡 */
 $_LANG['card_sn'] = '卡片序号';
-$_LANG['card_password'] = '卡片密码';
+$_LANG['card_password'] = '卡片';
 $_LANG['end_date'] = '截至日期';
 $_LANG['virtual_card_oos'] = '虚拟卡已缺货';
 
@@ -666,7 +666,7 @@ $_LANG['activity_list'] = '活动列表';
 $_LANG['treasure_info'] = '宝贝详情';
 $_LANG['activity_desc'] = '活动描述';
 $_LANG['activity_intro'] = '活动介绍';
-$_LANG['get_password'] = '找回密码';
+$_LANG['get_password'] = '找回';
 $_LANG['fee_total'] = '费用总计';
 $_LANG['other_info'] = '其它信息';
 $_LANG['user_balance'] = '会员余额';

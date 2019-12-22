@@ -86,14 +86,14 @@ elseif ($_REQUEST['act'] == 'signin')
     $ec_salt =$db->getOne($sql);
     if(!empty($ec_salt))
     {
-         /* 检查密码是否正确 */
+         /* 检查是否正确 */
          $sql = "SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt".
             " FROM " . $ecs->table('admin_user') .
             " WHERE user_name = '" . $_POST['username']. "' AND password = '" . md5(md5($_POST['password']).$ec_salt) . "'";
     }
     else
     {
-         /* 检查密码是否正确 */
+         /* 检查是否正确 */
          $sql = "SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt".
             " FROM " . $ecs->table('admin_user') .
             " WHERE user_name = '" . $_POST['username']. "' AND password = '" . md5($_POST['password']) . "'";
@@ -228,7 +228,7 @@ elseif ($_REQUEST['act'] == 'insert')
         }
     }
 
-    /* 获取添加日期及密码 */
+    /* 获取添加日期及 */
     $add_time = gmtime();
     
     $password  = md5($_POST['password']);
@@ -368,12 +368,12 @@ elseif ($_REQUEST['act'] == 'update' || $_REQUEST['act'] == 'update_self')
         }
     }
 
-    //如果要修改密码
+    //如果要修改
     $pwd_modified = false;
 
     if (!empty($_POST['new_password']))
     {
-        /* 查询旧密码并与输入的旧密码比较是否相同 */
+        /* 查询旧并与输入的旧比较是否相同 */
         $sql = "SELECT password FROM ".$ecs->table('admin_user')." WHERE user_id = '$admin_id'";
         $old_password = $db->getOne($sql);
 		$sql ="SELECT ec_salt FROM ".$ecs->table('admin_user')." WHERE user_id = '$admin_id'";
@@ -392,7 +392,7 @@ elseif ($_REQUEST['act'] == 'update' || $_REQUEST['act'] == 'update_self')
            sys_msg($_LANG['pwd_error'], 0, $link);
         }
 
-        /* 比较新密码和确认密码是否相同 */
+        /* 比较新和确认是否相同 */
         if ($_POST['new_password'] <> $_POST['pwd_confirm'])
         {
            $link[] = array('text' => $_LANG['go_back'], 'href'=>'javascript:history.back(-1)');
@@ -441,7 +441,7 @@ elseif ($_REQUEST['act'] == 'update' || $_REQUEST['act'] == 'update_self')
    /* 记录管理员操作 */
    admin_log($_POST['user_name'], 'edit', 'privilege');
 
-   /* 如果修改了密码，则需要将session中该管理员的数据清空 */
+   /* 如果修改了，则需要将session中该管理员的数据清空 */
    if ($pwd_modified && $_REQUEST['act'] == 'update_self')
    {
        $sess->delete_spec_admin_session($_SESSION['admin_id']);

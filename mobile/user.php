@@ -168,7 +168,7 @@ elseif ($act == 'register')
     $sql = 'SELECT * FROM ' . $ecs->table('reg_fields') . ' WHERE type < 2 AND display = 1 ORDER BY dis_order, id';
     $extend_info_list = $db->getAll($sql);
     $smarty->assign('extend_info_list', $extend_info_list);
-    /* 密码找回问题 */
+    /* 找回问题 */
     $_LANG['passwd_questions']['friend_birthday'] = '我最好朋友的生日？';
     $_LANG['passwd_questions']['old_address']     = '我儿时居住地的地址？';
     $_LANG['passwd_questions']['motto']           = '我的座右铭是？';
@@ -178,7 +178,7 @@ elseif ($act == 'register')
     $_LANG['passwd_questions']['interest']        = '我最大的爱好？';
     $_LANG['passwd_questions']['favorite_novel']  = '我最喜欢的小说？';
     $_LANG['passwd_questions']['favorite_equipe'] = '我最喜欢的运动队？';
-    /* 密码提示问题 */
+    /* 提示问题 */
     $smarty->assign('passwd_questions', $_LANG['passwd_questions']);
     $smarty->assign('footer', get_footer());
     $smarty->display('user_passport.html');
@@ -225,7 +225,7 @@ elseif ($act == 'act_register')
                 $db->query($sql);
             }
 
-            /* 写入密码提示问题和答案 */
+            /* 写入提示问题和答案 */
             if (!empty($passwd_answer) && !empty($sel_question))
             {
                 $sql = 'UPDATE ' . $ecs->table('users') . " SET `passwd_question`='$sel_question', `passwd_answer`='$passwd_answer'  WHERE `user_id`='" . $_SESSION['user_id'] . "'";

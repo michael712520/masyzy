@@ -77,7 +77,7 @@ class ecshop extends integrate
 
 
     /**
-     *  检查指定用户是否存在及密码是否正确(重载基类check_user函数，支持zc加密方法)
+     *  检查指定用户是否存在及是否正确(重载基类check_user函数，支持zc加密方法)
      *
      * @access  public
      * @param   string  $username   用户名
@@ -137,11 +137,11 @@ class ecshop extends integrate
             }
             else
             {
-                /* 如果salt存在，使用salt方式加密验证，验证通过洗白用户密码 */
+                /* 如果salt存在，使用salt方式加密验证，验证通过洗白用户 */
                 $encrypt_type = substr($row['salt'], 0, 1);
                 $encrypt_salt = substr($row['salt'], 1);
 
-                /* 计算加密后密码 */
+                /* 计算加密后 */
                 $encrypt_password = '';
                 switch ($encrypt_type)
                 {

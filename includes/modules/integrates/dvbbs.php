@@ -261,7 +261,7 @@ class dvbbs extends integrate
     }
 
 /**
-     *  编译密码函数
+     *  编译函数
      *
      * @access  public
      * @param   array   $cfg 包含参数为 $password, $md5password, $salt, $type

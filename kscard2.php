@@ -76,7 +76,7 @@ if ($action == 'act_login') {
              if (empty($record_arr))
 
              {
-                 show_message_wx('卡号或密码错误');
+                 show_message_wx('卡号或错误');
                  return 0;
              }
              else
@@ -142,7 +142,7 @@ if ($action == 'update_kscard')
 	$shipping_time    = isset($_REQUEST['shipping_time'])? trim($_REQUEST['shipping_time']): '0';
 
 	$arr       = array();
-	$arr       = $_POST['goods'];
+	$arr       = $_REQUEST['goods'];
   $goods_num = count($arr);
 	$goods     = !empty($arr) ? join(",",$arr) : '0';
 
@@ -183,7 +183,7 @@ if ($action == 'update_kscard')
              if (empty($record_arr))
 
              {
-                 show_message_wx('卡号或密码错误');
+                 show_message_wx('卡号或错误');
                  return 0;
              }
              else
@@ -242,6 +242,8 @@ function get_order_goods_list($id)
     	  $goods[$idx]['cg_id']           = $row['cg_id'];
         $goods[$idx]['cg_catid']         = $row['cg_catid'];
         $goods[$idx]['cg_goodid']         = $row['cg_goodid'];
+		$goods[$idx]['market_price']         = get_market_price($row['cg_goodid']);;
+		$goods[$idx]['shop_price']         = get_shop_price($row['cg_goodid']);;
         $goods[$idx]['cg_goodname']        = get_goods_name($row['cg_goodid']);
         $goods[$idx]['cg_goodbak']        = get_goods_bak($row['cg_goodid']);
         $goods[$idx]['cg_goods_img']        = get_goods_img($row['cg_goodid']);
@@ -263,13 +265,36 @@ function get_goods_name($id)
   return $result;
                
 }
-
 /* 获取配送商品图片 */
 
 function get_goods_img($id)
 
 {
 	$sql = "SELECT goods_img FROM " .$GLOBALS['ecs']->table('goods').
+               " WHERE goods_id = '$id'";
+  $result = $GLOBALS['db']->getOne($sql);
+  
+  return $result;
+               
+}
+/* scj */
+
+function get_market_price($id)
+
+{
+	$sql = "SELECT market_price FROM " .$GLOBALS['ecs']->table('goods').
+               " WHERE goods_id = '$id'";
+  $result = $GLOBALS['db']->getOne($sql);
+  
+  return $result;
+               
+}
+/* spj */
+
+function get_shop_price($id)
+
+{
+	$sql = "SELECT shop_price FROM " .$GLOBALS['ecs']->table('goods').
                " WHERE goods_id = '$id'";
   $result = $GLOBALS['db']->getOne($sql);
   

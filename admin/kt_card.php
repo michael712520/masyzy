@@ -128,12 +128,12 @@ if ($_REQUEST['act'] == 'excel')
     if (EC_CHARSET != 'gbk')
     {
         echo ecs_iconv('UTF8', 'GB2312', '储值卡序号') ."\t";
-        echo ecs_iconv('UTF8', 'GB2312', '储值卡密码') ."\t\n";
+        echo ecs_iconv('UTF8', 'GB2312', '储值卡') ."\t\n";
     }
     else
     {
         echo "储值卡序号" ."\t";
-        echo "储值卡密码" ."\t\n";
+        echo "储值卡" ."\t\n";
     }
 
     $val = array();

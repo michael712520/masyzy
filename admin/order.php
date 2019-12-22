@@ -6202,7 +6202,7 @@ function package_virtual_card_shipping($goods, $order_sn)
         {
             $card_info = array();
 
-            /* 卡号和密码解密 */
+            /* 卡号和解密 */
             if ($virtual_card['crc32'] == 0 || $virtual_card['crc32'] == crc32(AUTH_KEY))
             {
                 $card_info['card_sn'] = decrypt($virtual_card['card_sn']);

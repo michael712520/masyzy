@@ -113,10 +113,10 @@ if ($_REQUEST['act'] == 'excel') {
     /* 文件标题 */
     if (EC_CHARSET != 'gbk') {
         echo ecs_iconv('UTF8', 'GB2312', '礼品卡序号') . "\t";
-        echo ecs_iconv('UTF8', 'GB2312', '礼品卡密码') . "\t\n";
+        echo ecs_iconv('UTF8', 'GB2312', '礼品卡') . "\t\n";
     } else {
         echo "礼品卡序号" . "\t";
-        echo "礼品卡密码" . "\t\n";
+        echo "礼品卡" . "\t\n";
     }
 
     $val = array();
@@ -187,7 +187,7 @@ if ($_REQUEST['act'] == 'edit_card') {
 /*------------------------------------------------------ */
 
 if ($_REQUEST['act'] == 'query') {
-    $list = get_order_list();
+    $list = get_order_list(null,null);
 
     $smarty->assign('type_list', $list['item']);
     $smarty->assign('filter', $list['filter']);
@@ -1282,7 +1282,7 @@ function get_ok_num($card_type)
  * @access  public
  * @return void
  */
-function get_order_list($keywords, $order_id)
+function get_order_list($keywords=null, $order_id=null)
 {
 
     $result = get_filter();

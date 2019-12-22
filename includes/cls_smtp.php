@@ -44,7 +44,7 @@ class smtp
      *  port        SMTP 服务器的端口       默认：25
      *  helo        发送HELO命令的名称      默认：localhost
      *  user        SMTP 服务器的用户名     默认：空值
-     *  pass        SMTP 服务器的登陆密码   默认：空值
+     *  pass        SMTP 服务器的登陆   默认：空值
      *  timeout     连接超时的时间          默认：5
      *  @return  bool
      */

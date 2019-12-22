@@ -291,7 +291,7 @@ function check_auth()
  *  验证POST签名
  *
  *  @param   string   $post_params   POST传递参数
- *  @param   string   $token         证书加密码
+ *  @param   string   $token         证书加
  *
  *  @return  boolean                 返回是否有效
  */

@@ -26,7 +26,7 @@
 }
 
 .header {
-    height: 15rem;
+   
     background-color: red;
     order: 0;
     flex-shrink: 0;
@@ -140,4 +140,10 @@ td {
 }
 .cg_goodname{
     font-size: 20px;
+}
+.hnk{
+	    background-color: white;
+    padding-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
 }

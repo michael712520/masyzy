@@ -29,10 +29,10 @@
 <div class="row mc ">
     <!--{if $action eq 'default'}-->
     <img class="bgimg" src="./images/kscard2/7e76456abdac9b2f9e6ac438fc0419f0.jpg" alt=""/>
-    <div class=" col-sm-12 cvc ">
-        <div class="row hi"></div>
+    <div class=" col-sm-12 cvc " >
+        <div class="row hi" ></div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="display:none;">
                 <div class="row">
                     <h3><p class="text-center">礼品卡</p></h3>
                 </div>
@@ -42,15 +42,15 @@
             <div class="col-sm-12">
                 <form class="form-horizontal" name="formLogin" action="kscard2.php" method="get">
                     <div class="form-group form-inline">
-                        <label for="card_sn" class="col-sm-4 control-label">礼品卡序号</label>
+                        <label for="card_sn" class="col-sm-4 control-label">序号</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" name="card_sn" id="card_sn" placeholder="礼品卡序号"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="card_pwd" class="col-sm-4 control-label">礼品卡密码</label>
+                        <label for="card_pwd" class="col-sm-4 control-label">密码</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="card_pwd" id="card_pwd" placeholder="礼品卡密码">
+                            <input type="text" class="form-control" name="card_pwd" id="card_pwd" placeholder="密码">
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
                         <div class="col-sm-offset-2 col-sm-10 text-center">
                             <input type="hidden" name="act" value="{$act}"/>
                             <input type="hidden" name="back_act" value="{$back_act}"/>
-                            <button type="submit" class="btn btn-default ">进入</button>
+                            <button type="submit" class="btn btn-default " style="width: 200px;  font-size: 25px;">进入</button>
                         </div>
                     </div>
                 </form>
@@ -70,7 +70,7 @@
     <!--{if $action eq 'act_login'}-->
     <div class=" col-sm-12  bg2">
         <div class="row header"><img src="{$cat_bj}" alt=""/></div>
-        <div class="row center-block"><p class="text-center">只可以选择{$sel_num}个商品</p></div>
+        <div class="row center-block hnk"><p class="text-center">只可以选择{$sel_num}个商品</p></div>
         <form name="formLogin" action="kscard2.php" method="get">
             <div class="row ">
 
@@ -97,6 +97,12 @@
                                     </div>
                                     <div class="col-sm-8 cg_goodname">
                                         {$goods.cg_goodname}
+                                    </div>
+									 <div class="col-sm-8 cg_goodname">
+                                       市场价: {$goods.market_price}
+                                    </div>
+									 <div class="col-sm-8 cg_goodname">
+                                       本店价： {$goods.shop_price}
                                     </div>
                                 </div>
 

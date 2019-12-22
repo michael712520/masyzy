@@ -23,7 +23,7 @@ if (!defined('IN_ECS'))
  *
  * @access  public
  * @param   string       $username          注册用户名
- * @param   string       $password          用户密码
+ * @param   string       $password          用户
  * @param   string       $email             注册email
  * @param   array        $other             注册的其他信息
  *
@@ -198,12 +198,12 @@ function logout()
 }
 
 /**
- *  将指定user_id的密码修改为new_password。可以通过旧密码和验证字串验证修改。
+ *  将指定user_id的修改为new_password。可以通过旧和验证字串验证修改。
  *
  * @access  public
  * @param   int     $user_id        用户ID
- * @param   string  $new_password   用户新密码
- * @param   string  $old_password   用户旧密码
+ * @param   string  $new_password   用户新
+ * @param   string  $old_password   用户旧
  * @param   string  $code           验证码（md5($user_id . md5($password))）
  *
  * @return  boolen  $bool
@@ -225,7 +225,7 @@ function edit_password($user_id, $old_password, $new_password='', $code ='')
 }
 
 /**
- *  会员找回密码时，对输入的用户名和邮件地址匹配
+ *  会员找回时，对输入的用户名和邮件地址匹配
  *
  * @access  public
  * @param   string  $user_name    用户帐号
@@ -255,7 +255,7 @@ function check_userinfo($user_name, $email)
 }
 
 /**
- *  用户进行密码找回操作时，发送一封确认邮件
+ *  用户进行找回操作时，发送一封确认邮件
  *
  * @access  public
  * @param   string  $uid          用户ID
@@ -286,7 +286,7 @@ function send_pwd_email($uid, $user_name, $email, $code)
 
     $content = $GLOBALS['smarty']->fetch('str:' . $template['template_content']);
 
-    /* 发送确认重置密码的确认邮件 */
+    /* 发送确认重置的确认邮件 */
     if (send_mail($user_name, $email, $template['template_subject'], $content, $template['is_html']))
     {
         return true;

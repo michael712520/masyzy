@@ -134,7 +134,7 @@ function insert_cart_info()
  * @return  string
  */
 function insert_ads($arr)
-{
+{ $arr['num'] = intval($arr['num']); $arr['id'] = intval($arr['id']);
     static $static_res = NULL;
 
     $time = gmtime();
@@ -261,7 +261,7 @@ function insert_member_info()
  * @return  string
  */
 function insert_comments($arr)
-{
+{ $arr['id'] = intval($arr['id']); $arr['type'] = addslashes($arr['type']);
     $need_cache = $GLOBALS['smarty']->caching;
     $need_compile = $GLOBALS['smarty']->force_compile;
 
@@ -299,7 +299,7 @@ function insert_comments($arr)
  * @return  string
  */
 function insert_bought_notes($arr)
-{
+{ $arr['id'] = intval($arr['id']);
     $need_cache = $GLOBALS['smarty']->caching;
     $need_compile = $GLOBALS['smarty']->force_compile;
 

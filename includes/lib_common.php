@@ -1109,7 +1109,7 @@ function virtual_card_shipping ($goods, $order_sn, &$msg, $process = 'other')
      {
         $card_info = array();
 
-        /* 卡号和密码解密 */
+        /* 卡号和解密 */
         if ($virtual_card['crc32'] == 0 || $virtual_card['crc32'] == crc32(AUTH_KEY))
         {
             $card_info['card_sn'] = decrypt($virtual_card['card_sn']);
@@ -1215,7 +1215,7 @@ function virtual_card_result($order_sn, $goods)
 
     while ($row = $GLOBALS['db']->FetchRow($res))
     {
-        /* 卡号和密码解密 */
+        /* 卡号和解密 */
         if ($row['crc32'] == 0 || $row['crc32'] == crc32(AUTH_KEY))
         {
             $row['card_sn'] = decrypt($row['card_sn']);

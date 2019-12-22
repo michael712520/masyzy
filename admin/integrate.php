@@ -987,7 +987,7 @@ if ($_REQUEST['act'] == 'setup_ucenter')
     }
     elseif($ucconfig == '-1')
     {
-        //管理员密码无效
+        //管理员无效
         $result['error'] = 1;
         $result['message'] = $_LANG['uc_msg_password_wrong'];
     }

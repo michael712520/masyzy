@@ -266,7 +266,7 @@ class ucenter extends integrate
     }
 
     /**
-     *  检查指定用户是否存在及密码是否正确
+     *  检查指定用户是否存在及是否正确
      *
      * @access  public
      * @param   string  $username   用户名

@@ -31,11 +31,11 @@ $_LANG['goto_list'] = '返回会员账号列表';
 $_LANG['username_empty'] = '会员名称不能为空！';
 
 /* 表单相关语言项 */
-$_LANG['password'] = '登录密码';
-$_LANG['confirm_password'] = '确认密码';
-$_LANG['newpass'] = '新密码';
-$_LANG['question'] = '密码提示问题';
-$_LANG['answer'] = '密码提示问题答案';
+$_LANG['password'] = '登录';
+$_LANG['confirm_password'] = '确认';
+$_LANG['newpass'] = '新';
+$_LANG['question'] = '提示问题';
+$_LANG['answer'] = '提示问题答案';
 $_LANG['gender'] = '性别';
 $_LANG['birthday'] = '出生日期';
 $_LANG['sex'][0] = '保密';
@@ -96,10 +96,10 @@ $_LANG['sign_building'] = '标志建筑';
 /* JS 语言项 */
 $_LANG['js_languages']['no_username'] = '没有输入用户名。';
 $_LANG['js_languages']['invalid_email'] = '没有输入邮件地址或者输入了一个无效的邮件地址。';
-$_LANG['js_languages']['no_password'] = '没有输入密码。';
-$_LANG['js_languages']['no_confirm_password'] = '没有输入确认密码。';
-$_LANG['js_languages']['password_not_same'] = '输入的密码和确认密码不一致。';
+$_LANG['js_languages']['no_password'] = '没有输入。';
+$_LANG['js_languages']['no_confirm_password'] = '没有输入确认。';
+$_LANG['js_languages']['password_not_same'] = '输入的和确认不一致。';
 $_LANG['js_languages']['invalid_pay_points'] = '消费积分数不是一个整数。';
 $_LANG['js_languages']['invalid_rank_points'] = '等级积分数不是一个整数。';
-$_LANG['js_languages']['password_len_err'] = '新密码和确认密码的长度不能小于6';
+$_LANG['js_languages']['password_len_err'] = '新和确认的长度不能小于6';
 ?>
