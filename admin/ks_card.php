@@ -223,7 +223,7 @@ if ($_REQUEST['act'] == 'list') {
 
     $smarty->assign('type_list', $list);
     $smarty->assign('pages', $pages);
-
+    echo var_dump($pages);
     assign_query_info();
     $smarty->display('ks_card_list.htm');
 }

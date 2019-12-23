@@ -77,7 +77,7 @@ function signinResponse(result)
 {
   var userName = document.forms['ECS_LOGINFORM'].elements['username'].value;
   var mzone = document.getElementById("ECS_MEMBERZONE");
-  var res   = result.parseJSON();
+  var res   = $.evalJSON(result);
 
   if (res.error > 0)
   {

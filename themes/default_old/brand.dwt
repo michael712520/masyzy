@@ -342,7 +342,7 @@ function addToCookie(goodsId,goodsName)
   if(document.getCookie("compareItem" + catId) != null)
   {
     var value   = document.getCookie("compareItem" + catId);
-    obj = value.parseJSON();
+    obj = $.evalJSON(value);
   }
   var counter = 0;
   for (var k in obj)
@@ -395,7 +395,7 @@ function addToCookie(goodsId,goodsName)
 function removeItem(id)
 {
   var cookieValue = document.getCookie("compareItem" + catId);
-  var obj = cookieValue.parseJSON();
+  var obj = $.evalJSON(cookieValue);
   delete obj[id];
   var date = new Date();
   date.setTime(date.getTime() + 99999999);
@@ -420,7 +420,7 @@ window.onload = function()
   submitBtn.value = button_compare;
   submitBtn.onclick = function() {
     var cookieValue = document.getCookie("compareItem" + catId);
-    var obj = cookieValue.parseJSON();
+    var obj = $.evalJSON(cookieValue);
     var url = document.location.href;
     url = url.substring(0,url.lastIndexOf('/')+1) + "compare.php"; 
     var i = 0;
@@ -454,7 +454,7 @@ window.onload = function()
     if(cookieValue != "{}"){
     compareBox.style.display = "";
   }
-  var obj = cookieValue.parseJSON();
+  var obj = $.evalJSON(cookieValue);
   for (var k in obj)
   {
     if(typeof(obj[k])=="function")
