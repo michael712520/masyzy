@@ -349,7 +349,7 @@ var Transport =
     {
       try
       {
-        legalParams = "JSON=" + params.toJSONString();
+        legalParams = "JSON=" + $.toJSON(params);
       }
       catch (ex)
       {
@@ -493,8 +493,9 @@ Ajax.call = Transport.run;
 */
 
 // Augment the basic prototypes if they have not already been augmented.
-
+/*
 if ( ! Object.prototype.toJSONString) {
+	
     Array.prototype.toJSONString = function () {
         var a = ['['], // The array holding the text fragments.
             b,         // A boolean indicating that a comma is required.
@@ -585,11 +586,12 @@ if ( ! Object.prototype.toJSONString) {
     };
 
     Object.prototype.toJSONString = function () {
+		
         var a = ['{'],  // The array holding the text fragments.
             b,          // A boolean indicating that a comma is required.
             k,          // The current key.
             v;          // The current value.
-
+		
         function p(s) {
 
             // p accumulates text fragment pairs in an array. It inserts a comma before all
@@ -603,7 +605,6 @@ if ( ! Object.prototype.toJSONString) {
         }
 
         // Iterate through all of the keys in the object, ignoring the proto chain.
-
         for (k in this) {
             if (this.hasOwnProperty(k)) {
                 v = this[k];
@@ -621,15 +622,12 @@ if ( ! Object.prototype.toJSONString) {
                 // typeof null is 'object', so watch out for that case.
 
                 case 'object':
-                    if (this !== window)
-                    {
-                      if (v) {
-                          if (typeof v.toJSONString === 'function') {
-                              p(v.toJSONString());
-                          }
-                      } else {
-                          p("null");
-                      }
+                    if (v) {
+                        if (typeof v.toJSONString === 'function') {
+                            p(v.toJSONString());
+                        }
+                    } else {
+                        p("null");
                     }
                     break;
                 default:
@@ -734,6 +732,7 @@ if ( ! Object.prototype.toJSONString) {
         };
     })(String.prototype);
 }
+*/
 
 Ajax.onRunning  = showLoader;
 Ajax.onComplete = hideLoader;
@@ -743,19 +742,17 @@ Ajax.onComplete = hideLoader;
  */
 function showLoader()
 {
-
   document.getElementsByTagName('body').item(0).style.cursor = "wait";
 
-  if (top.frames['header-frame'] && top.frames['header-frame'].document.getElementById("load-div"))
-  { 
+  if (top.frames['header-frame'])
+  {
     top.frames['header-frame'].document.getElementById("load-div").style.display = "block";
-
   }
   else
-  { 
+  {
     var obj = document.getElementById('loader');
 
-    if ( ! obj && typeof(process_request) != 'undefined')
+    if ( ! obj && process_request)
     {
       obj = document.createElement("DIV");
       obj.id = "loader";
@@ -772,7 +769,7 @@ function showLoader()
 function hideLoader()
 {
   document.getElementsByTagName('body').item(0).style.cursor = "auto";
-  if (top.frames['header-frame'] && top.frames['header-frame'].document.getElementById("load-div"))
+  if (top.frames['header-frame'])
   {
     setTimeout(function(){top.frames['header-frame'].document.getElementById("load-div").style.display = "none"}, 10);
   }

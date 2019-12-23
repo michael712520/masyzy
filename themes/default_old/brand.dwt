@@ -386,7 +386,7 @@ function addToCookie(goodsId,goodsName)
   var date = new Date();
   date.setTime(date.getTime() + 99999999);
   
-  document.setCookie("compareItem" + catId, obj.toJSONString(), date.toGMTString())
+  document.setCookie("compareItem" + catId, $.toJSON(obj), date.toGMTString())
   if (document.getElementById("compareBox").style.display != "")
     document.getElementById("compareBox").style.display = "";
 
@@ -400,8 +400,8 @@ function removeItem(id)
   var date = new Date();
   date.setTime(date.getTime() + 99999999);
   document.removeCookie("compareItem" + catId);
-  var JSONString = obj.toJSONString();
-  document.setCookie("compareItem" + catId, obj.toJSONString(), date.toGMTString())
+  var JSONString = $.toJSON(obj);
+  document.setCookie("compareItem" + catId, $.toJSON(obj), date.toGMTString())
   if(JSONString == "{}"){
     document.getElementById("compareBox").style.display = "none";
   }
