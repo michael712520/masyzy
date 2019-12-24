@@ -278,7 +278,7 @@ if ((!isset($_SESSION['admin_id']) || intval($_SESSION['admin_id']) <= 0) &&
         }
         else
         {
-            // 检查密码是否正确
+            // 检查是否正确
             if (md5($row['password'] . $_CFG['hash_code']) == $_COOKIE['ECSCP']['admin_pass'])
             {
                 !isset($row['last_time']) && $row['last_time'] = '';

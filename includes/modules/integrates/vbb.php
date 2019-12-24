@@ -138,7 +138,7 @@ class vbb extends integrate
      *
      * @access      public
      * @param       string      username    用户名
-     * @param       string      password    登录密码
+     * @param       string      password    登录
      * @param       string      email       邮件地址
      * @param       string      bday        生日
      * @param       string      gender      性别
@@ -161,7 +161,7 @@ class vbb extends integrate
         }
 
 
-        /* 编译密码 */
+        /* 编译 */
         $salt     = addslashes($this->fetch_user_salt());
 
         /* 更新数据 */
@@ -231,7 +231,7 @@ class vbb extends integrate
 
 
     /**
-     *  检查指定用户是否存在及密码是否正确
+     *  检查指定用户是否存在及是否正确
      *
      * @access  public
      * @param   string  $username   用户名
@@ -280,7 +280,7 @@ class vbb extends integrate
     }
 
     /**
-     * 生成密码种子的函数
+     * 生成种子的函数
      *
      * @access      private
      * @param       int     length        长度

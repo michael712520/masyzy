@@ -23,7 +23,7 @@ $_LANG['mail_html'] = 'HTML 邮件';
 /* 模板描述 */
 $_LANG['order_confirm'] = '订单确认模板';
 $_LANG['deliver_notice'] = '发货通知模板';
-$_LANG['send_password'] = '发送密码模板';
+$_LANG['send_password'] = '发送模板';
 $_LANG['order_cancel'] = '订单取消模板';
 $_LANG['order_invalid'] = '订单无效模板';
 $_LANG['send_bonus'] = '发送储值卡模板';

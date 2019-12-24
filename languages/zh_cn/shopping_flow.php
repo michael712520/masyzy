@@ -15,11 +15,11 @@
 
 $_LANG['flow_login_register']['username_not_null'] = '请您输入用户名。';
 $_LANG['flow_login_register']['username_invalid'] = '您输入了一个无效的用户名。';
-$_LANG['flow_login_register']['password_not_null'] = '请您输入密码。';
+$_LANG['flow_login_register']['password_not_null'] = '请您输入。';
 $_LANG['flow_login_register']['email_not_null'] = '请您输入电子邮件。';
 $_LANG['flow_login_register']['email_invalid'] = '您输入的电子邮件不正确。';
-$_LANG['flow_login_register']['password_not_same'] = '您输入的密码和确认密码不一致。';
-$_LANG['flow_login_register']['password_lt_six'] = '密码不能小于6个字符。';
+$_LANG['flow_login_register']['password_not_same'] = '您输入的和确认不一致。';
+$_LANG['flow_login_register']['password_lt_six'] = '不能小于6个字符。';
 
 $_LANG['regist_success'] = "恭喜您，%s 账号注册成功!";
 $_LANG['login_success'] = '恭喜！您已经成功登陆本站！';
@@ -95,7 +95,7 @@ $_LANG['collect_to_flow'] = '立即购买';
 /* 登录注册 */
 $_LANG['forthwith_login'] = '登录';
 $_LANG['forthwith_register'] = '注册新用户';
-$_LANG['signin_failed'] = '对不起，登录失败，请检查您的用户名和密码是否正确';
+$_LANG['signin_failed'] = '对不起，登录失败，请检查您的用户名和是否正确';
 $_LANG['gift_remainder'] = '说明：在您登录或注册后，请到购物车页面重新选择赠品。';
 
 /* 收货人信息 */

@@ -186,7 +186,7 @@ $_LANG['confirm_edit'] = 'Submit';
 
 $_LANG['confirm_drop_address'] = 'Are you sure delete the place of receipt?';
 
-/* 会员密码找回 */
+/* 会员找回 */
 $_LANG['username_and_email'] = 'Please enter your username and email address.';
 $_LANG['enter_new_password'] = 'Please enter your new password:';
 $_LANG['username_no_email'] = 'Please username and email must match. Please type it again.';
@@ -363,7 +363,7 @@ $_LANG['order_amount'] = 'Sum payable';
 $_LANG['update_address'] = 'Update consignee address';
 $_LANG['virtual_card_info'] = 'Virtual card infomation';
 
-/* 取回密码 */
+/* 取回 */
 $_LANG['back_home_lnk'] = 'Return to HOME page.';
 $_LANG['get_password_lnk'] = 'Return to get the password page.';
 
@@ -633,7 +633,7 @@ $_LANG['exchange_error_1'] = 'Exchange Error';
 $_LANG['pay_points'] = 'Pay-point';
 $_LANG['rank_points'] = 'Rank-point ';
 
-/* 密码强度 */
+/* 强度 */
 $_LANG['pwd_lower'] = 'Lower';
 $_LANG['pwd_middle'] = 'Middle';
 $_LANG['pwd_high'] = 'High';

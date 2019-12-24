@@ -357,7 +357,7 @@ elseif ($_REQUEST['act'] == 'submit_change')
 
 
 
-        // 重新加密卡号和密码
+        // 重新加密卡号和
         $old_crc32 = crc32($_POST['old_string']);
         $new_crc32 = crc32($_POST['new_string']);
         $sql = "SELECT card_id, card_sn, card_password FROM " . $ecs->table('virtual_card') . " WHERE crc32 = '$old_crc32'";
@@ -491,7 +491,7 @@ elseif ($_REQUEST['act'] == 'start_change')
 
 elseif ($_REQUEST['act'] == 'on_change')
 {
-   // 重新加密卡号和密码
+   // 重新加密卡号和
    $each_num    = 1;
    $old_crc32   = crc32(OLD_AUTH_KEY);
    $new_crc32   = crc32(AUTH_KEY);

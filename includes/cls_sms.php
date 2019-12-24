@@ -179,7 +179,7 @@ class sms
      *
      * @access  private
      * @param   string      $email          邮箱
-     * @param   string      $password       密码
+     * @param   string      $password       
      * @return  boolean                     如果启用信息格式合法就返回true，否则返回false。
      */
     function check_enable_info($email, $password)

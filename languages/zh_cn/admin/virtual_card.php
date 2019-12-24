@@ -21,7 +21,7 @@ $_LANG['lab_goods_name'] = '商品名称';
 $_LANG['replenish'] = '补货';
 $_LANG['lab_card_id'] = '编号';
 $_LANG['lab_card_sn'] = '卡片序号';
-$_LANG['lab_card_password'] = '卡片密码';
+$_LANG['lab_card_password'] = '卡片';
 $_LANG['lab_end_date'] = '截至使用日期';
 $_LANG['lab_is_saled'] = '是否已出售';
 $_LANG['lab_order_sn'] = '订单号';
@@ -47,17 +47,17 @@ $_LANG['continue_add'] = '继续补货';
 $_LANG['uploadfile_fail'] = '文件上传失败';
 $_LANG['batch_card_add_ok'] = '已成功添加了 %s 条补货信息';
 
-$_LANG['js_languages']['no_card_sn'] = '卡片序号和卡片密码不能都为空。';
+$_LANG['js_languages']['no_card_sn'] = '卡片序号和卡片不能都为空。';
 $_LANG['js_languages']['separator_not_null'] = '分隔符号不能为空。';
 $_LANG['js_languages']['uploadfile_not_null'] = '请选择要上传的文件。';
 
 $_LANG['use_help'] = '使用说明：' .
         '<ol>' .
           '<li>上传文件应为CSV文件<br />' .
-              'CSV文件第一列为卡片序号；第二列为卡片密码；第三列为使用截至日期。<br />'.
-              '(用EXCEL创建csv文件方法：在EXCEL中按卡号、卡片密码、截至日期的顺序填写数据，完成后直接保存为csv文件即可)'.
-          '<li>密码，和截至日期可以为空，截至日期格式为2006-11-6或2006/11/6'.
-          '<li>卡号、卡片密码、截至日期中不要使用中文</li>' .
+              'CSV文件第一列为卡片序号；第二列为卡片；第三列为使用截至日期。<br />'.
+              '(用EXCEL创建csv文件方法：在EXCEL中按卡号、卡片、截至日期的顺序填写数据，完成后直接保存为csv文件即可)'.
+          '<li>，和截至日期可以为空，截至日期格式为2006-11-6或2006/11/6'.
+          '<li>卡号、卡片、截至日期中不要使用中文</li>' .
         '</ol>';
 
 /*------------------------------------------------------ */
@@ -67,7 +67,7 @@ $_LANG['use_help'] = '使用说明：' .
 $_LANG['virtual_card_change'] = '更改加密串';
 $_LANG['user_guide'] = '使用说明：' .
         '<ol>' .
-          '<li>加密串是在加密虚拟卡类商品的卡号和密码时使用的</li>' .
+          '<li>加密串是在加密虚拟卡类商品的卡号和时使用的</li>' .
           '<li>加密串保存在文件 includes/lib_code.php 中，对应的常量是 AUTH_KEY</li>' .
           '<li>如果要更改加密串，首先要修改文件 lib_code.php，把 OLD_AUTH_KEY 设置为更改前使用的加密串，把 AUTH_KEY 修改为新加密串；然后在下面的文本框中输入原加密串和新加密串，点\'确定\'按钮后即可</li>' .
         '</ol>';

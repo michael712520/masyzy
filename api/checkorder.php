@@ -24,7 +24,7 @@ $json = new JSON;
 $res = array('error' => 0, 'new_orders' => 0, 'new_paid' => 0);
 $_REQUEST['username'] = urlencode(serialize(json_str_iconv($_REQUEST['username'])));
 
-/* 检查密码是否正确 */
+/* 检查是否正确 */
 $sql = "SELECT COUNT(*) ".
         " FROM " . $ecs->table('admin_user') .
         " WHERE user_name = '" . trim($_REQUEST['username']). "' AND password = '" . md5(trim($_REQUEST['password'])) . "'";

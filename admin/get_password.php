@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ECSHOP 找回管理员密码
+ * ECSHOP 找回管理员
  * ============================================================================
  * * 版权所有 2005-2012 上海商派网络科技有限公司，并保留所有权利。
  * 网站地址: http://www.ecshop.com；
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
             exit;
         }
 
-        /* 以用户的原密码，与code的值匹配 */
+        /* 以用户的原，与code的值匹配 */
         $sql = 'SELECT password FROM ' .$ecs->table('admin_user'). " WHERE user_id = '$adminid'";
         $password = $db->getOne($sql);
 
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 /*------------------------------------------------------ */
 else
 {
-    /* 发送找回密码确认邮件 */
+    /* 发送找回确认邮件 */
     if (!empty($_POST['action']) && $_POST['action'] == 'get_pwd')
     {
         $admin_username = !empty($_POST['user_name']) ? trim($_POST['user_name']) : '';
@@ -91,7 +91,7 @@ else
             exit;
         }
 
-        /* 管理员用户名和邮件地址是否匹配，并取得原密码 */
+        /* 管理员用户名和邮件地址是否匹配，并取得原 */
         $sql = 'SELECT user_id, password FROM ' .$ecs->table('admin_user').
                " WHERE user_name = '$admin_username' AND email = '$admin_email'";
         $admin_info = $db->getRow($sql);
@@ -114,7 +114,7 @@ else
 
             $content = $smarty->fetch('str:' . $template['template_content']);
 
-            /* 发送确认重置密码的确认邮件 */
+            /* 发送确认重置的确认邮件 */
             if (send_mail($admin_username, $admin_email, $template['template_subject'], $content,
             $template['is_html']))
             {
@@ -135,7 +135,7 @@ else
             sys_msg($_LANG['email_username_error'], 1);
         }
     }
-    /* 验证新密码，更新管理员密码 */
+    /* 验证新，更新管理员 */
     elseif (!empty($_POST['action']) && $_POST['action'] == 'reset_pwd')
     {
         $new_password = isset($_POST['password']) ? trim($_POST['password'])  : '';
@@ -148,7 +148,7 @@ else
             exit;
         }
 
-        /* 以用户的原密码，与code的值匹配 */
+        /* 以用户的原，与code的值匹配 */
         $sql = 'SELECT password FROM ' .$ecs->table('admin_user'). " WHERE user_id = '$adminid'";
         $password = $db->getOne($sql);
 
@@ -161,7 +161,7 @@ else
             sys_msg($_LANG['code_param_error'], 0, $link);
         }
 
-        //更新管理员的密码
+        //更新管理员的
 		$ec_salt=rand(1,9999);
         $sql = "UPDATE " .$ecs->table('admin_user'). "SET password = '".md5(md5($new_password).$ec_salt)."',`ec_salt`='$ec_salt' ".
                "WHERE user_id = '$adminid'";

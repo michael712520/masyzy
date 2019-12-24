@@ -55,10 +55,10 @@ class ECS
     }
 
     /**
-     * ECSHOP 密码编译方法;
+     * ECSHOP 编译方法;
      *
      * @access  public
-     * @param   string      $pass       需要编译的原始密码
+     * @param   string      $pass       需要编译的原始
      *
      * @return  string
      */

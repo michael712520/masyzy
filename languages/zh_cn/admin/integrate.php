@@ -48,7 +48,7 @@ $_LANG['lable_db_name'] = '数据库名：';
 $_LANG['lable_db_chartset'] = '数据库字符集：';
 $_LANG['lable_is_latin1'] = '是否为latin1编码';
 $_LANG['lable_db_user'] = '数据库帐号：';
-$_LANG['lable_db_pass'] = '数据库密码：';
+$_LANG['lable_db_pass'] = '数据库：';
 $_LANG['lable_prefix'] = '数据表前缀：';
 $_LANG['lable_url'] = '被整合系统的完整 URL：';
 /* 表单相关语言项(discus5x) */
@@ -59,7 +59,7 @@ $_LANG['button_force_save_config'] = '直接保存配置信息';
 $_LANG['save_confirm'] = '您确定要直接保存配置信息吗？';
 $_LANG['button_save_config'] = '保存配置信息';
 
-$_LANG['error_db_msg'] = '数据库地址、用户或密码不正确';
+$_LANG['error_db_msg'] = '数据库地址、用户或不正确';
 $_LANG['error_db_exist'] = '数据库不存在';
 $_LANG['error_table_exist'] = '整合论坛关键数据表不存在，你填写的信息有误';
 
@@ -163,7 +163,7 @@ $_LANG['ucenter_lab_ip'] = 'UCenter IP 地址:';
 $_LANG['ucenter_lab_connect'] = 'UCenter 连接方式:';
 $_LANG['ucenter_lab_db_host'] = 'UCenter 数据库服务器:';
 $_LANG['ucenter_lab_db_user'] = 'UCenter 数据库用户名:';
-$_LANG['ucenter_lab_db_pass'] = 'UCenter 数据库密码:';
+$_LANG['ucenter_lab_db_pass'] = 'UCenter 数据库:';
 $_LANG['ucenter_lab_db_name'] = 'UCenter 数据库名:';
 $_LANG['ucenter_lab_db_pre'] = 'UCenter 表前缀:';
 $_LANG['ucenter_lab_tag_number'] = 'TAG 标签显示数量:';
@@ -181,19 +181,19 @@ $_LANG['ucenter_notice_db_host'] = '可以是本地也可以是远程数据库�
 $_LANG['uc_notice_ip'] = '连接的过程中出了点问题，请您填写服务器 IP 地址，如果您的 UC 与 ECShop 装在同一服务器上，我们建议您尝试填写 127.0.0.1';
 
 $_LANG['uc_lab_url'] = 'UCenter 的 URL:';
-$_LANG['uc_lab_pass'] = 'UCenter 创始人密码:';
+$_LANG['uc_lab_pass'] = 'UCenter 创始人:';
 $_LANG['uc_lab_ip'] = 'UCenter 的 IP:';
 
 $_LANG['uc_msg_verify_failur'] = '验证失败';
-$_LANG['uc_msg_password_wrong'] = '创始人密码错误';
+$_LANG['uc_msg_password_wrong'] = '创始人错误';
 $_LANG['uc_msg_data_error'] = '安装数据错误';
 
 $_LANG['ucenter_import_username'] = '会员数据导入到 UCenter';
 $_LANG['uc_import_notice'] = '提醒：导入会员数据前请暂停各个应用(如Discuz!, SupeSite等)';
 $_LANG['uc_members_merge'] = '会员合并方式';
 $_LANG['user_startid_intro'] = '<p>此起始会员ID为%s。如原 ID 为 888 的会员将变为 %s+888 的值。</p>';
-$_LANG['uc_members_merge_way1'] = '将与UC用户名和密码相同的用户强制为同一用户';
-$_LANG['uc_members_merge_way2'] = '将与UC用户名和密码相同的用户不导入UC用户';
+$_LANG['uc_members_merge_way1'] = '将与UC用户名和相同的用户强制为同一用户';
+$_LANG['uc_members_merge_way2'] = '将与UC用户名和相同的用户不导入UC用户';
 $_LANG['start_import'] = '开始导入';
 $_LANG['import_user_success'] = '成功将会员数据导入到 UCenter';
 $_LANG['uc_points'] = 'UCenter的积分兑换设置需要在UCenter管理后台进行';
