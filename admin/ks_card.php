@@ -223,7 +223,6 @@ if ($_REQUEST['act'] == 'list') {
 
     $smarty->assign('type_list', $list);
     $smarty->assign('pages', $pages);
-
     assign_query_info();
     $smarty->display('ks_card_list.htm');
 }
@@ -274,8 +273,10 @@ if ($_REQUEST['act'] == 'card_update') {
     }
 
     $url = "ks_card.php?act=list&tid=$type_id";
-
-    ecs_header("Location: $url\n");
+    echo var_dump($type_id);
+    echo var_dump($bnum);
+    echo var_dump($cnum);
+   // ecs_header("Location: $url\n");
     exit;
 }
 
@@ -1167,16 +1168,13 @@ function get_type_name($card_type)
 /* 生成礼品卡 */
 
 function create_card($type_id, $bnum, $cnum)
-
 {
     if ($type_id != 0) {
-
         $add_time = gmtime();
         $sn_head = get_sn_head($type_id);
         $used_time = 0;
         $order_id = 0;
         $cnum = $cnum + $bnum;
-
         for ($i = $bnum; $i < $cnum; $i++) {
             $card_sn = $sn_head . str_pad($i, 6, '0', STR_PAD_LEFT);
             $card_pwd = rancard(10, '0123456789');
@@ -1187,8 +1185,12 @@ function create_card($type_id, $bnum, $cnum)
 
             $record_arr = $GLOBALS['db']->getRow($sql);
             if (empty($record_arr)) {
-                $GLOBALS['db']->query("INSERT INTO " . $GLOBALS['ecs']->table('ks_cards') . " (card_type, card_sn, card_pwd, add_time, used_time, order_id) VALUES('$type_id', '$card_sn','$card_pwd','$add_time','$used_time','$order_id')");
-            } else {
+                try{
+                    $GLOBALS['db']->query("INSERT INTO " . $GLOBALS['ecs']->table('ks_cards') . " (card_type, card_sn, card_pwd, add_time, used_time, order_id) VALUES('$type_id', '$card_sn','$card_pwd','$add_time','$used_time','$order_id')");
+                }catch(Exception $e){
+
+                }
+                } else {
                 break;
             }
         }

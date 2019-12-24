@@ -2,7 +2,7 @@
 <link href="themes/ecmoban_jindong2013/css/all.css" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_jindong2013/css/index_nav.css" rel="stylesheet" type="text/css" />
 
-{insert_scripts files='jquery.min.js'} 
+{insert_scripts files='jquery.min.js,jquery.json-1.3.js'} 
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 </script> 
@@ -32,7 +32,7 @@ document.getElementById("zzkf_ba").style.display="none";
 <div class="zzkf clearfix">
 <div id="zzkf_ah" class="zzkf_ah" onclick="zzkf_1()">在线客服</div>
 <div id="zzkf_ba" class="zzkf_ba">
-<div class="zzkf_title"><span class="zzkf_title_1">在线客服</span><span class="x" onclick="zzkf_2()">x</span></div>
+<div class="zzkf_title"><span class="zzkf_title_1">在线客服11</span><span class="x" onclick="zzkf_2()">x</span></div>
 <div class="zzkf_content">
 <!-- QQ 号码 {foreach from=$qq item=im} -->
       <!-- {if $im} -->
